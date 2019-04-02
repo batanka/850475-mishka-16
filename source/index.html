@@ -32,8 +32,10 @@
       </div>
     </header>
 
-    <main class="main-page">
-      <h1 class="main-page__title">Милые штуки ручной работы для дома</h1>
+    <main class="page-main">
+      <div class="page-main__intro page-main__intro--index">
+        <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+      </div>
       <ul class="category-list">
         <li class="category-list__item category-list__item--interior">
           <a class="category-list__link" href="interior.html">Предметы интерьера</a>
@@ -44,95 +46,105 @@
       </ul>
 
       <section class="weekly-good">
-        <h2 class="weekly-good__title">Вязаные корзинки</h2>
-        <p class="weekly-goods__subtitle">Товар недели</p>
-        <p class="weekly-good__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="weekly-good__wrapper">
+          <h2 class="weekly-good__title">Вязаные корзинки</h2>
+          <p class="weekly-goods__subtitle">Товар недели</p>
+          <p class="weekly-good__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-        <table class="weekly-good__table">
-          <tr class="weekly-good__table-row">
-            <td class="weekly-good__key">Цвет:</td>
-            <td class="weekly-good__table-value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="weekly-good__table-row">
-            <td class="weekly-good__key">Диаметр:</td>
-            <td class="weekly-good__table-value">25 см</td>
-          </tr>
-          <tr class="weekly-good__table-row">
-            <td class="weekly-good__key">Высота:</td>
-            <td class="weekly-good__table-value">15 см</td>
-          </tr>
-        </table>
+          <table class="weekly-good__table">
+            <tr class="weekly-good__table-row">
+              <td class="weekly-good__key">Цвет:</td>
+              <td class="weekly-good__table-value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="weekly-good__table-row">
+              <td class="weekly-good__key">Диаметр:</td>
+              <td class="weekly-good__table-value">25 см</td>
+            </tr>
+            <tr class="weekly-good__table-row">
+              <td class="weekly-good__key">Высота:</td>
+              <td class="weekly-good__table-value">15 см</td>
+            </tr>
+          </table>
 
-        <img class="weekly-good__image" src="#" width="260" height="315" alt="Вязаная корзинка Тиффани/серый">
+          <img class="weekly-good__image" src="#" width="260" height="315" alt="Вязаная корзинка Тиффани/серый">
 
-        <p class="weekly-good__price">990 руб.</p>
+          <p class="weekly-good__price">990 руб.</p>
 
-        <a class="button weekly-good__button" href="add-order.html">Заказать</a>
+          <a class="button weekly-good__button" href="add-order.html">Заказать</a>
+        </div>
       </section>
 
       <section class="about">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <ul class="about__list">
-          <li class="about__item about__item--eco">Экологически чистые материалы</li>
-          <li class="about__item about__item--style">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
-        </ul>
+        <div class="about__wrapper">
+          <h2 class="about__title">Коротко о нас:</h2>
+          <ul class="about__list">
+            <li class="about__item about__item--eco">Экологически чистые материалы</li>
+            <li class="about__item about__item--style">Скандинавский стиль по российской цене</li>
+            <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
+            <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="about__item about__item--support">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
 
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="rewiew__item">
-          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <b class="review__author">Анастасия Красильникова</b>
-            <p class="review__adress">@misssssiskras</p>
-        </blockquote>
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <blockquote class="rewiew__item">
+            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <b class="review__author">Анастасия Красильникова</b>
+              <p class="review__adress">@misssssiskras</p>
+          </blockquote>
 
-        <div class="review__controls">
-            <button class="review__control review__control--prev" type="button" aria-label="Назад"></button>
-            <button class="review__control review__control--next" type="button" aria-label="Вперед"></button>
-        </div>
+          <div class="review__controls">
+              <button class="review__control review__control--prev" type="button" aria-label="Назад"></button>
+              <button class="review__control review__control--next" type="button" aria-label="Вперед"></button>
+          </div>
 
-        <a class="button review__btn" href="reviews.html">Написать</a>
+          <a class="button review__btn" href="reviews.html">Написать</a>
+       </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__text">e-mail:</p>
-            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__text">адрес:</p>
-            <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-          </li>
-        </ul>
-        <div class="contacts__map"></div>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">e-mail:</p>
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__text">адрес:</p>
+              <p class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            </li>
+          </ul>
+          <div class="contacts__map"></div>
 
-        <a class="button contacts__btn" href="contacts.html">Напишите нам</a>
+          <a class="button contacts__btn" href="contacts.html">Напишите нам</a>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__socials social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html-academy"></a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__socials social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html-academy"></a>
+        </div>
       </div>
     </footer>
 
