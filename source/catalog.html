@@ -10,8 +10,8 @@
         <nav class="main-nav main-nav--open">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__logo" href="index.html">
+            <li class="site-list__item site-list__item--logo">
+              <a class="site-list__link site-list__link--logo" href="index.html">
                 <img class="site-list__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип интернет-магазина Мишка">
               </a>
             </li>
@@ -38,42 +38,57 @@
       </div>
       <section class="catalog">
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
-              <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__image" width="260" height="195" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
             </a>
-            <div class="catalog__description">
-              <a class="catalog__title-link" href="#">
-                <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
-              </a>
-              <p class="catalog__text">Рост 30 см, вес 200 г</p>
-              <p class="catalog__price">1 200 руб.</p>
+            <div class="catalog-item__description">
+              <div class="catalog-item__top">
+                <a class="catalog-item__title-link" href="#">
+                  <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+                </a>
+                <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="catalog-item__bottom">
+                <span class="catalog-item__price">1 200 руб.</span>
+                <a class="catalog-item__buy" href="add-cart.html" aria-label="Добавить товар в корзину"></a>
+              </div>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
-              <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Корзинка для белья">
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__image" width="260" height="195" src="http://placehold.it/260x195" alt="Корзинка для белья">
             </a>
-            <div class="catalog__description">
-              <a class="catalog__title-link" href="#">
-                <h2 class="catalog__title">Корзинка для белья</h2>
-              </a>
-              <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
-              <p class="catalog__price">690 руб.</p>
+            <div class="catalog-item__description">
+              <div class="catalog-item__top">
+                <a class="catalog-item__title-link" href="#">
+                  <h2 class="catalog-item__title">Корзинка для белья</h2>
+                </a>
+                <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="catalog-item__bottom">
+                <span class="catalog-item__price">690 руб.</span>
+                <a class="catalog-item__buy" href="add-cart.html" aria-label="Добавить товар в корзину"></a>
+              </div>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <a class="catalog__image-link" href="#">
-              <img class="catalog__image" width="260" height="195" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+          <li class="catalog__item catalog-item">
+            <a class="catalog-item__link" href="#">
+              <img class="catalog-item__image" width="260" height="195" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
             </a>
-            <div class="catalog__description">
-              <a class="catalog__title-link" href="#">
-                <h2 class="catalog__title">Большая корзинка для игрушек</h2>
-              </a>
-              <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog__price">1 500 руб.</p>
+            <div class="catalog-item__description">
+              <div class="catalog-item__top">
+                <a class="catalog-item__title-link" href="#">
+                  <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+                </a>
+                <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="catalog-item__bottom">
+                <span class="catalog-item__price">1 500 руб.</span>
+                <a class="catalog-item__buy" href="add-cart.html" aria-label="Добавить товар в корзину"></a>
+              </div>
             </div>
           </li>
         </ul>
