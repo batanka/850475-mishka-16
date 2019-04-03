@@ -37,7 +37,70 @@
         <h1 class="page-main__title">Вязание на заказ</h1>
       </div>
 
-      <!-- Здесь будет форма -->
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order__form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Тип</legend>
+            <ul class="order__list radio-list">
+              <li class="radio-list__item">
+                <input class="radio-list__input visually-hidden" type="radio" name="type" id="interior-accessory" value="interior-accessory" checked>
+                <label class="radio-list__label" for="interior-accessory">Аксессуар для интерьера</label>
+              </li>
+
+              <li class="radio-list__item">
+                <input class="radio-list__input visually-hidden" type="radio" name="type" id="toy" value="toy">
+                <label class="radio-list__label" for="toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">Цвет</legend>
+            <ul class="order__checkbox-list">
+              <li class="order__checkbox-item">
+                <input class="order__checkbox-input visually-hidden" type="checkbox" name="color" id="white" value="white" checked>
+                <label class="order__label" for="white">Белый</label>
+              </li>
+
+              <li class="order__checkbox-item">
+                <input class="order__checkbox-input visually-hidden" type="checkbox" name="color" id="gray" value="gray" checked>
+                <label class="order__label" for="gray">Серый</label>
+              </li>
+
+              <li class="order__checkbox-item">
+                <input class="order__checkbox-input visually-hidden" type="checkbox" name="color" id="tiffany" value="tiffany">
+                <label class="order__label" for="tiffany">"Тиффани"</label>
+              </li>
+
+              <li class="order__checkbox-item">
+                <input class="order__checkbox-input visually-hidden" type="checkbox" name="color" id="black" value="black">
+                <label class="order__label" for="black">Черный</label>
+              </li>
+
+              <li class="order__checkbox-item">
+                <input class="order__checkbox-input visually-hidden" type="checkbox" name="color" id="pink" value="pink">
+                <label class="order__label" for="pink">Розовый</label>
+              </li>
+
+              <li class="order__checkbox-item">
+                <input class="order__checkbox-input visually-hidden" type="checkbox" name="color" id="orange" value="orange">
+                <label class="order__label" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order__fieldset">
+            <legend class="order__legend">ФИО</legend>
+            <ul class="order__input-list">
+
+            </ul>
+          </fieldset>
+
+          <button class="button order__button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
 
     </main>
 
