@@ -1,3 +1,12 @@
 .catalog-item__title-link {
   color: $black;
 }
+
+.catalog-item__text {
+  @include font-set(13px, 30px);
+  color: $text-color;
+}
+
+.catalog-item__price {
+  @include font-set(15px, 24px, 700);
+}
