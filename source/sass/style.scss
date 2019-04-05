@@ -3,14 +3,16 @@
 @import 'fonts.scss';
 @import 'normalize.scss';
 @import 'global.scss';
+@import 'blocks/page-header.scss';
 @import 'blocks/button.scss';
 @import 'blocks/site-list.scss';
 @import 'blocks/social.scss';
 @import 'blocks/copyright.scss';
 @import 'blocks/page-main.scss';
-@import 'blocks/category-list.scss';
+@import 'blocks/category.scss';
 @import 'blocks/weekly-good.scss';
 @import 'blocks/about.scss';
+@import 'blocks/reviews.scss';
 @import 'blocks/contacts.scss';
 @import 'blocks/modal-order.scss';
 @import 'blocks/catalog.scss';

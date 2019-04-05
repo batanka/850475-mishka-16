@@ -1,11 +1,20 @@
 .page-main__intro {
+  @include wrapper;
+  min-height: 177px;
+
+  text-align: center;
+
   background-color: $bg-color;
+
+  &--index {
+    min-height: 283px;
+    background: $bg-color url("../../img/hero-mobile@1x.jpg") center center no-repeat;
+  }
 }
 
-.page-main__intro--index {
-  background: $bg-color url("../../img/hero-mobile@1x.jpg") center center no-repeat;
-}
 
 .page-main__title {
+  padding: 75px 0;
+
   @include header;
 }

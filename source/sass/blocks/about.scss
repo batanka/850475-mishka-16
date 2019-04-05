@@ -1,3 +1,11 @@
+.about {
+  padding: 30px 0;
+}
+
+.about__wrapper {
+  @include wrapper;
+}
+
 .about__title {
   @include header;
 }
@@ -7,5 +15,7 @@
 }
 
 .about__item {
+  padding-top: 85px;
+
   @include font-set(17px, 20px, 700);
 }

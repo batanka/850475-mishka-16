@@ -5,9 +5,15 @@
 }
 
 @mixin header {
+  margin: 0;
+
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+}
+
+@mixin wrapper {
+  margin: 0 30px;
 }
 
 @mixin font-set($size: 17px, $line-height: 24px, $weight:null) {

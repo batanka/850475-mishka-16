@@ -11,6 +11,9 @@
 }
 
 .category-list__link {
+  display: block;
+  padding: 30px;
+
   @include font-set(19px, 24px, 700);
 
   color: #ffffff;

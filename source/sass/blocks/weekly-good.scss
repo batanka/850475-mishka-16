@@ -1,3 +1,15 @@
+.weekly-good {
+  padding: 30px 0 40px;
+}
+
+.weekly-good__wrapper {
+  @include wrapper;
+}
+
+.weekly-good__header {
+  margin-bottom: 30px;
+}
+
 .weekly-good__title {
   @include header;
 }
@@ -15,7 +27,18 @@
   color: $text-color;
 }
 
+.weekly-good__desc {
+  margin-bottom: 30px;
+}
+
+.weekly-good__image {
+  margin-bottom: 30px;
+}
+
 .weekly-good__price {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-weight: 700;
 
   color: $text-color;

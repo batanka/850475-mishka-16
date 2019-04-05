@@ -1,4 +1,14 @@
+.contacts {
+  padding: 40px 0;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
 .contacts__title {
+  margin-bottom: 40px;
+
   @include font-set(18px, 30px, 700);
 }
 
@@ -8,7 +18,15 @@
   color: $text-color;
 }
 
+.contacts__item {
+  margin-bottom: 40px;
+}
+
 .contacts__email {
   text-decoration: underline $main-color;
   color: $text-color;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
 }
