@@ -1,0 +1,22 @@
+.weekly-good__title {
+  @include header;
+}
+
+.weekly-good__subtitle {
+  @include font-set(17px, 20px, 700);
+  text-transform: uppercase;
+
+  color: $main-color;
+}
+
+.weekly-good__info {
+  @include font-set(15px, 24px);
+
+  color: $text-color;
+}
+
+.weekly-good__price {
+  font-weight: 700;
+
+  color: $text-color;
+}

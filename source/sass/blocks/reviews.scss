@@ -1,0 +1,11 @@
+.reviews__title {
+  @include header;
+}
+
+.reviews__item {
+  @include font-set(15px, 30px);
+}
+
+.reviews__author {
+  font-weight: 700;
+}

@@ -1,0 +1,17 @@
+.category-list {
+  @include list-reset;
+}
+
+.category-list__item--interior {
+  background-color: $main-color;
+}
+
+.category-list__item--kids-toy {
+  background-color: #56c3b2;
+}
+
+.category-list__link {
+  @include font-set(19px, 24px, 700);
+
+  color: #ffffff;
+}

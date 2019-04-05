@@ -1,0 +1,11 @@
+.about__title {
+  @include header;
+}
+
+.about__list {
+  @include list-reset;
+}
+
+.about__item {
+  @include font-set(17px, 20px, 700);
+}

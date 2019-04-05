@@ -1,0 +1,14 @@
+.contacts__title {
+  @include font-set(18px, 30px, 700);
+}
+
+.contacts__list {
+  @include list-reset;
+
+  color: $text-color;
+}
+
+.contacts__email {
+  text-decoration: underline $main-color;
+  color: $text-color;
+}

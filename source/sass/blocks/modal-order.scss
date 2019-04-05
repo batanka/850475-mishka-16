@@ -1,0 +1,13 @@
+.modal-order__title {
+  @include header;
+}
+
+.modal-order__text {
+  @include font-set(15px, 30px);
+}
+
+.modal-order__button {
+  color: $white;
+
+  background-color: $main-color;
+}
