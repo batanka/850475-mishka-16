@@ -1,5 +1,29 @@
+.catalog-item {
+  margin-bottom: 30px;
+  border: 2px solid #ededed;
+}
+
+.catalog-item__description {
+  margin: 0 28px;
+}
+
+.catalog-item__bottom {
+  border-top: 2px solid $border-color;
+}
+
 .catalog-item__title-link {
   color: $black;
+}
+
+.catalog-item__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @include font-set(17px, 24px, 700);
+}
+
+.catalog-item__link {
+  margin-bottom: 30px;
 }
 
 .catalog-item__text {
@@ -9,4 +33,8 @@
 
 .catalog-item__price {
   @include font-set(15px, 24px, 700);
+}
+
+.catalog-item__add-cart path {
+  fill: #d3d2d2;
 }

@@ -29,3 +29,15 @@
 .reviews__controls {
   margin-bottom: 40px;
 }
+
+.reviews__control {
+  min-height: 51px;
+
+  border: 2px solid $border-color;
+  cursor: pointer;
+}
+
+.reviews__button {
+  display: block;
+  width: 100%;
+}

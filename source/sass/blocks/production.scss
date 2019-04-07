@@ -1,0 +1,31 @@
+.production {
+  @include wrapper;
+  margin-bottom: 58px;
+  padding: 27px 0 33px;
+  border: 2px solid $border-color;
+}
+
+.production__title {
+  @include font-set(17px, 24px, 700);
+
+  margin-bottom: 25px;
+  padding-left: 90px;
+}
+
+.production__top {
+  margin-bottom: 30px;
+}
+
+.production__bottom {
+  padding: 0 34px;
+}
+
+.production__text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.production__button {
+  display: block;
+  width: 100%;
+}

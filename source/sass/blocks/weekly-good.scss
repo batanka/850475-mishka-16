@@ -31,6 +31,19 @@
   margin-bottom: 30px;
 }
 
+.weekly-good__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.weekly-good__key {
+  border-bottom: 2px solid $border-color;
+}
+
+.weekly-good__table-value {
+  border-bottom: 2px solid $border-color;
+}
+
 .weekly-good__image {
   margin-bottom: 30px;
 }
@@ -42,4 +55,9 @@
   font-weight: 700;
 
   color: $text-color;
+}
+
+.weekly-good__button {
+  display: block;
+  width: 100%;
 }

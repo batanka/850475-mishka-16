@@ -1,5 +1,7 @@
 .social {
-  background-color: $bg-color;
+  min-height: 80px;
+
+  border-bottom: 2px solid $border-color;
 }
 
 .social__list {

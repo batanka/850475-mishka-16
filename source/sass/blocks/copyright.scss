@@ -1,3 +1,11 @@
+.copyright {
+  min-height: 79px;
+}
+
 .copyright__text {
   @include font-set(19px, 24px, 700);
+}
+
+.copyright__logo path {
+  fill: $main-color;
 }
