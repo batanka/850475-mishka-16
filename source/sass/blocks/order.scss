@@ -1,0 +1,108 @@
+.order {
+  @include wrapper;
+}
+
+.order__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include font-set(13px, 24px);
+}
+
+.order__fieldset {
+  border: none;
+}
+
+.order__legend {
+  @include font-set(17px, 17px, 700);
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.order__list {
+  @include list-reset;
+}
+
+.radio-list__label {
+  @include font-set(17px, 18px, 700);
+
+  padding-left: 62px;
+}
+
+.checkbox-list__label {
+  @include font-set(17px, 18px, 700);
+
+  padding-left: 62px;
+}
+
+.field-list__label {
+  @include font-set(17px, 18px, 700);
+}
+
+.field-list__input {
+  width: 100%;
+
+  border: none;
+  border-bottom: $border-width solid $black;
+}
+
+.field-list__input::placeholder {
+  @include font-set(17px, 18px);
+  color: $text-color;
+}
+
+.phone-list__label {
+  @include font-set(17px, 18px, 700);
+}
+
+.phone-list__input {
+  width: 100%;
+
+  border: none;
+  border-bottom: $border-width solid $black;
+}
+
+.field-list__input::placeholder {
+  @include font-set(17px, 18px);
+  color: $text-color;
+  opacity: 0.3;
+}
+
+.email__label {
+  @include font-set(17px, 18px, 700);
+}
+
+.email__input {
+  width: 100%;
+
+  border: none;
+  border-bottom: $border-width solid $black;
+}
+
+.email__input::placeholder {
+  @include font-set(17px, 18px);
+  color: $text-color;
+  opacity: 0.3;
+}
+
+.textarea__label {
+  @include font-set(17px, 18px, 700);
+}
+
+.textarea__input {
+  width: 100%;
+  resize: none;
+
+  border: $border-width solid $black;
+}
+
+.textarea__input::placeholder {
+  @include font-set(17px, 18px);
+  color: $text-color;
+  opacity: 0.3;
+}
+
+.order__button {
+  display: block;
+  width: 100%;
+}
