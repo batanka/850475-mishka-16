@@ -1,0 +1,12 @@
+.button {
+  padding: 15px 0;
+
+  @include font-set(17px, 20px, 700);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $text-color;
+
+  border: $border-width solid $text-color;
+  cursor: pointer;
+}

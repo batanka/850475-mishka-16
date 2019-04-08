@@ -1,0 +1,33 @@
+.modal-order {
+  @include wrapper;
+  padding: 36px 0;
+}
+
+.modal-order__title {
+  @include header;
+}
+
+.modal-order__text {
+  margin-bottom: 28px;
+
+  @include font-set(15px, 30px);
+}
+
+.modal-order__form {
+  // display: flex;
+}
+
+.modal-order__label {
+  padding: 20px 20px;
+  min-width: 82px;
+
+  border: $border;
+}
+
+.modal-order__button {
+  width: 100%;
+
+  color: $white;
+
+  background-color: $main-color;
+}

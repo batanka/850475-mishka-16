@@ -1,0 +1,23 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin header($size: 25px, $line-height: 30px, $weigth: 700) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weigth;
+
+  margin: 0;
+}
+
+@mixin wrapper {
+  padding: 0 30px;
+}
+
+@mixin font-set($size: 17px, $line-height: 24px, $weight:null) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}

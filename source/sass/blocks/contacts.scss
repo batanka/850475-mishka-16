@@ -1,0 +1,36 @@
+.contacts {
+  padding: 40px 0;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
+.contacts__title {
+  @include header(18px);
+  margin-bottom: 40px;
+}
+
+.contacts__list {
+  @include list-reset;
+
+  color: $text-color;
+}
+
+.contacts__item {
+  margin-bottom: 40px;
+}
+
+.contacts__email {
+  text-decoration: underline $main-color;
+  color: $text-color;
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}
+
+.contacts__button {
+  display: block;
+  width: 100%;
+}

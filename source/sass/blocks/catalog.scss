@@ -1,0 +1,4 @@
+.catalog__list {
+  @include list-reset;
+  @include wrapper;
+}
