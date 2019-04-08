@@ -4,16 +4,16 @@
   list-style: none;
 }
 
-@mixin header {
-  margin: 0;
+@mixin header($size: 25px, $line-height: 30px, $weigth: 700) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weigth;
 
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
+  margin: 0;
 }
 
 @mixin wrapper {
-  margin: 0 30px;
+  padding: 0 30px;
 }
 
 @mixin font-set($size: 17px, $line-height: 24px, $weight:null) {

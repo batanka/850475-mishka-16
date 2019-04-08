@@ -2,11 +2,11 @@
   @include wrapper;
   margin-bottom: 58px;
   padding: 27px 0 33px;
-  border: 2px solid $border-color;
+  border: $border;
 }
 
 .production__title {
-  @include font-set(17px, 24px, 700);
+  @include header(17px, 24px);
 
   margin-bottom: 25px;
   padding-left: 90px;

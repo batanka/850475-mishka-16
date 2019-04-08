@@ -1,6 +1,6 @@
 .catalog-item {
   margin-bottom: 30px;
-  border: 2px solid #ededed;
+  border: $border;
 }
 
 .catalog-item__description {
@@ -8,7 +8,7 @@
 }
 
 .catalog-item__bottom {
-  border-top: 2px solid $border-color;
+  border-top: $border;
 }
 
 .catalog-item__title-link {
@@ -16,10 +16,8 @@
 }
 
 .catalog-item__title {
-  margin: 0;
+  @include header(17px, 24px, 700);
   margin-bottom: 15px;
-
-  @include font-set(17px, 24px, 700);
 }
 
 .catalog-item__link {

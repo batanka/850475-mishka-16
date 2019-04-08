@@ -5,10 +5,10 @@
 }
 
 .site-list__item {
-  border-bottom: 2px solid $border-color;
+  border-bottom: $border;
 
   &--logo {
-    border-top: 2px solid $border-color;
+    border-top: $border;
   }
 }
 

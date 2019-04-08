@@ -7,9 +7,8 @@
 }
 
 .contacts__title {
+  @include header(18px);
   margin-bottom: 40px;
-
-  @include font-set(18px, 30px, 700);
 }
 
 .contacts__list {
