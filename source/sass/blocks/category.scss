@@ -1,6 +1,8 @@
 .category-list {
   @include list-reset;
+}
 
+.category-list__item {
   &--interior {
     background-color: $main-color;
   }
