@@ -1,14 +1,22 @@
 .site-list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
 
   font-weight: 700;
 }
 
 .site-list__item {
+  width: 100%;
   border-bottom: $border;
 
   &--logo {
     border-top: $border;
+  }
+
+  &--new,
+  &--sale {
+    display: none;
   }
 }
 
@@ -17,4 +25,138 @@
   padding: 28px 0 27px 76px;
 
   color: #000000;
+
+  &--logo {
+    padding: 22px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    min-height: 88px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list__item {
+    border: none;
+
+    &--logo {
+      width: 320px;
+      order: 1;
+    }
+
+    &--search {
+      width: 82px;
+      order: 2;
+
+      font-size: 0;
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+    }
+
+    &--cart {
+      width: 265px;
+      order: 3;
+    }
+
+    &--catalog {
+      width: 160px;
+      margin-right: 10px;
+      order: 4;
+
+      @include font-set(15px, 24px, 700);
+    }
+
+    &--form {
+      width: 160px;
+      order: 5;
+
+      @include font-set(15px, 24px, 700);
+    }
+  }
+
+  .site-list__link {
+    &--catalog {
+      padding: 20px 20px 20px 0;
+    }
+
+    &--form {
+      padding: 20px 20px 20px 0;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    &--catalog {
+      width: 185px;
+      order: 1;
+
+      font-size: $font-size;
+
+      border-right: $border;
+    }
+
+    &--form {
+      width: 265px;
+      order: 2;
+
+      font-size: $font-size;
+    }
+
+    &--logo {
+      width: 150px;
+      margin-left: 40px;
+      order: 3;
+    }
+
+    &--search {
+      width: 82px;
+      order: 4;
+    }
+
+    &--cart {
+      order: 5;
+    }
+
+    &--new {
+      display: block;
+      width: 175px;
+      order: 6;
+
+      font-size: 15px;
+    }
+
+    &--sale {
+      display: block;
+      width: 175px;
+      order: 7;
+
+      font-size: 15px;
+    }
+  }
+
+  .site-list__link {
+    &--catalog {
+    padding: 32px 35px 32px 0;
+    }
+
+    &--form {
+      padding: 32px 35px;
+    }
+
+    &--new {
+      padding: 20px 10px 20px 0;
+    }
+
+    &--sale {
+      padding: 20px 10px 20px 0;
+
+      text-align: center;
+    }
+  }
 }
