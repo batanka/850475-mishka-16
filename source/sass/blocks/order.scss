@@ -9,91 +9,145 @@
   @include font-set(13px, 24px);
 }
 
-.order__fieldset {
+.order-form__fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include font-set(17px, 18px, 700);
   border: none;
+
+  &--name {
+    margin-bottom: 10px;
+  }
+
+  &--tel {
+    margin-bottom: 10px;
+  }
+
+  &--plus {
+    margin-bottom: 10px;
+  }
 }
 
-.order__legend {
-  @include font-set(17px, 17px, 700);
+.order-form__legend {
+  margin-bottom: 20px;
+
   color: $main-color;
   text-transform: uppercase;
+
+  &--name {
+    margin-bottom: 30px;
+  }
+
+  &--tel {
+    margin-bottom: 12px;
+  }
+
+  &--tel {
+    margin-bottom: 13px;
+  }
+
+  &--plus {
+    margin-bottom: 20px;
+  }
 }
 
-.order__list {
+.order-form__list {
   @include list-reset;
 }
 
-.radio-list__label {
-  @include font-set(17px, 18px, 700);
+.order-form__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 16px 0;
 
+  color: $text-color;
+
+  border: none;
+  border-bottom: $border-width solid $black;
+
+  &:hover {
+    border-bottom: $border-width solid $main-color;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: $border-width solid $main-color;
+  }
+}
+
+.order-form__input::placeholder {
+  @include font-set(17px, 18px);
+  color: $text-color;
+  opacity: 0.3;
+}
+
+.radio-list__label,
+.checkbox-list__label {
   padding-left: 62px;
+}
+
+.radio-list__item {
+  margin-bottom: 40px;
+}
+
+.radio-list__label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    content: "";
+    width: 40px;
+    height: 40px;
+
+    border: $border-width solid $text-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.checkbox-list__item {
+  margin-bottom: 40px;
 }
 
 .checkbox-list__label {
-  @include font-set(17px, 18px, 700);
+  position: relative;
 
-  padding-left: 62px;
-}
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    content: "";
+    width: 40px;
+    height: 39px;
 
-.field-list__label {
-  @include font-set(17px, 18px, 700);
-}
-
-.field-list__input {
-  width: 100%;
-
-  border: none;
-  border-bottom: $border-width solid $black;
-}
-
-.field-list__input::placeholder {
-  @include font-set(17px, 18px);
-  color: $text-color;
-}
-
-.phone-list__label {
-  @include font-set(17px, 18px, 700);
-}
-
-.phone-list__input {
-  width: 100%;
-
-  border: none;
-  border-bottom: $border-width solid $black;
-}
-
-.field-list__input::placeholder {
-  @include font-set(17px, 18px);
-  color: $text-color;
-  opacity: 0.3;
-}
-
-.email__label {
-  @include font-set(17px, 18px, 700);
-}
-
-.email__input {
-  width: 100%;
-
-  border: none;
-  border-bottom: $border-width solid $black;
-}
-
-.email__input::placeholder {
-  @include font-set(17px, 18px);
-  color: $text-color;
-  opacity: 0.3;
-}
-
-.textarea__label {
-  @include font-set(17px, 18px, 700);
+    border: $border-width solid $text-color;
+    cursor: pointer;
+  }
 }
 
 .textarea__input {
   width: 100%;
+  height: 106px;
   resize: none;
+  padding: 16px;
+
+  color: $text-color;
 
   border: $border-width solid $black;
+
+  &:hover {
+    border: $border-width solid $main-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: $border-width solid $main-color;
+  }
 }
 
 .textarea__input::placeholder {
@@ -102,7 +156,7 @@
   opacity: 0.3;
 }
 
-.order__button {
+.order-form__button {
   display: block;
   width: 100%;
 }
