@@ -68,6 +68,8 @@
       order: 4;
 
       @include font-set(15px, 24px, 700);
+
+      z-index: 2;
     }
 
     &--form {
@@ -75,6 +77,8 @@
       order: 5;
 
       @include font-set(15px, 24px, 700);
+
+      z-index: 2;
     }
   }
 
@@ -129,6 +133,8 @@
       order: 6;
 
       font-size: 15px;
+
+      z-index: 2;
     }
 
     &--sale {
@@ -137,6 +143,8 @@
       order: 7;
 
       font-size: 15px;
+
+      z-index: 2;
     }
   }
 
