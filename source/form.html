@@ -41,10 +41,11 @@
       <section class="order">
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="order__form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">Тип</legend>
-            <ul class="order__list radio-list">
+        <form class="order-form" action="https://echo.htmlacademy.ru" method="POST">
+
+          <fieldset class="order-form__fieldset">
+            <legend class="order-form__legend">Тип</legend>
+            <ul class="order-form__list radio-list">
               <li class="radio-list__item">
                 <input class="radio-list__input visually-hidden" type="radio" name="type" id="interior-accessory" value="interior-accessory" checked>
                 <label class="radio-list__label" for="interior-accessory">Аксессуар для интерьера</label>
@@ -57,9 +58,9 @@
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">Цвет</legend>
-            <ul class="order__list checkbox-list">
+          <fieldset class="order-form__fieldset">
+            <legend class="order-form__legend">Цвет</legend>
+            <ul class="order-form__list checkbox-list">
               <li class="checkbox-list__item">
                 <input class="checkbox-list__input visually-hidden" type="checkbox" name="color" id="white" value="white" checked>
                 <label class="checkbox-list__label" for="white">Белый</label>
@@ -75,7 +76,7 @@
                 <label class="checkbox-list__label" for="tiffany">"Тиффани"</label>
               </li>
 
-              <li class="order__checkbox-item">
+              <li class="checkbox-list__item">
                 <input class="checkbox-list__input visually-hidden" type="checkbox" name="color" id="black" value="black">
                 <label class="checkbox-list__label" for="black">Черный</label>
               </li>
@@ -92,55 +93,55 @@
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">ФИО</legend>
-            <ul class="order__list field-list">
+          <fieldset class="order-form__fieldset order-form__fieldset--name">
+            <legend class="order-form__legend order-form__legend--name">ФИО</legend>
+            <ul class="order-form__list field-list">
               <li class="field-list__item">
                 <label class="field-list__label" for="name">Имя:</label>
-                <input class="field-list__input" type="text" placeholder="Введите ваше имя*" id="name" required>
+                <input class="field-list__input order-form__input" type="text" placeholder="Введите ваше имя*" id="name" required>
               </li>
 
               <li class="field-list__item">
                 <label class="field-list__label" for="surname">Фамилия:</label>
-                <input class="field-list__input" type="text" placeholder="Укажите фамилию*" id="surname" required>
+                <input class="field-list__input order-form__input" type="text" placeholder="Укажите фамилию*" id="surname" required>
               </li>
 
               <li class="field-list__item">
                 <label class="field-list__label" for="patronymic">Отчество:</label>
-                <input class="field-list__input" type="text" placeholder="Отчество, если желаете" id="patronymic">
+                <input class="field-list__input order-form__input" type="text" placeholder="Отчество, если желаете" id="patronymic">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">Тел</legend>
-            <ul class="order__list phone-list">
+          <fieldset class="order-form__fieldset order-form__fieldset--tel">
+            <legend class="order-form__legend order-form__legend--tel">Тел</legend>
+            <ul class="order-form__list phone-list">
               <li class="phone-list__item">
                 <label class="phone-list__label visually-hidden" for="mobile">Номер телефона</label>
-                <input class="phone-list__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="mobile" required>
+                <input class="phone-list__input order-form__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="mobile" required>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">e-mail</legend>
-            <div class="order__wrapper email">
+          <fieldset class="order-form__fieldset order-form__fieldset--mail">
+            <legend class="order-form__legend order-form__legend--mail">e-mail</legend>
+            <div class="order-form__wrapper email">
               <label class="email__label visually-hidden" for="email">Номер телефона</label>
-              <input class="email__input" type="email" placeholder="Ваш Email*" id="email" required>
+              <input class="email__input order-form__input" type="email" placeholder="Ваш Email*" id="email" required>
             </div>
           </fieldset>
 
-          <fieldset class="order__fieldset">
-            <legend class="order__legend">Доп</legend>
-            <div class="order__wrapper textarea">
+          <fieldset class="order-form__fieldset order-form__fieldset--plus">
+            <legend class="order-form__legend order-form__legend--plus">Доп</legend>
+            <div class="order-form__wrapper textarea">
               <label class="textarea__label visually-hidden" for="textarea">Пожелания к заказу</label>
               <textarea class="textarea__input" name="wishes" id="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
 
-          <div class="order__bottom">
-            <small class="order__text"><sup>*</sup>Поля обязательны для заполнения</small>
-            <button class="button order__button" type="submit">Отправить заказ</button>
+          <div class="order-form__bottom">
+            <small class="order-form__text"><sup>*</sup>Поля обязательны для заполнения</small>
+            <button class="button order-form__button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
