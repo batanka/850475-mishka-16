@@ -1,0 +1,23 @@
+.checkbox-list__label {
+  padding-left: 62px;
+}
+
+.checkbox-list__item {
+  margin-bottom: 40px;
+}
+
+.checkbox-list__label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    content: "";
+    width: 40px;
+    height: 39px;
+
+    border: $border-width solid $text-color;
+    cursor: pointer;
+  }
+}

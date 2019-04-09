@@ -1,0 +1,25 @@
+.textarea__input {
+  width: 100%;
+  height: 106px;
+  resize: none;
+  padding: 16px;
+
+  color: $text-color;
+
+  border: $border-width solid $black;
+
+  &:hover {
+    border: $border-width solid $main-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: $border-width solid $main-color;
+  }
+}
+
+.textarea__input::placeholder {
+  @include font-set(17px, 18px);
+  color: $text-color;
+  opacity: 0.3;
+}
