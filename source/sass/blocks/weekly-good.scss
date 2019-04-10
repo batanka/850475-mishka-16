@@ -31,7 +31,7 @@
 }
 
 .weekly-good__table {
-  width: 260px;
+  width: 100%;
   display: block;
   padding-bottom: 28px;
 
@@ -47,12 +47,14 @@
 }
 
 .weekly-good__table-value {
-  border-bottom: $border;
   padding: 10px 0 9px;
   width: 160px;
+
+  border-bottom: $border;
 }
 
 .weekly-good__image {
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
