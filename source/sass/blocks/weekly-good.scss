@@ -37,6 +37,7 @@
 }
 
 .weekly-good__key {
+  padding: 10px 30px 10px 0;
   border-bottom: $border;
 }
 
@@ -53,6 +54,7 @@
   margin-bottom: 30px;
 
   font-weight: 700;
+  text-align: center;
 
   color: $text-color;
 }
@@ -60,4 +62,78 @@
 .weekly-good__button {
   display: block;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-good__wrapper {
+    position: relative;
+    @include wrapper-tablet;
+    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .weekly-good__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .weekly-good__title {
+    @include font-set(43px, 50px);
+  }
+
+  .weekly-good__subtitle {
+    width: 110px;
+    padding-right: 27px;
+    margin-left: auto;
+
+    @include font-set(17px, 17px);
+  }
+
+  .weekly-good__info {
+    width: 290px;
+    margin-right: auto;
+  }
+
+  .weekly-good__desc {
+    @include font-set(17px, 30px);
+  }
+
+  .weekly-good__image {
+    position: absolute;
+    right: 0;
+  }
+
+  .weekly-good__footer {
+    width: 290px;
+    margin-right: auto;
+  }
+
+  .weekly-good__price {
+    @include font-set(20px, 24px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly-good__wrapper {
+    width: $desktop-width;
+  }
+
+  .weekly-good__subtitle {
+    width: 175px;
+    padding: 15px;
+    margin-left: 0;
+    order: -1;
+  }
+
+  .weekly-good__info {
+    margin-right: auto;
+  }
+
+  .weekly-good__footer {
+    margin-right: auto;
+  }
 }

@@ -15,10 +15,10 @@
 @mixin wrapper {
   margin: 0 auto;
   padding: 0 30px;
+  width: 100%;
 }
 
 @mixin wrapper-tablet {
-  margin: 0 auto;
   padding: 0 50px;
 }
 
