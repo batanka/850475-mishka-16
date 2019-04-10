@@ -4,4 +4,31 @@
 
 .page-footer__wrapper {
   @include wrapper;
+  width: 100%;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: $tablet-width;
+    @include wrapper-tablet;
+    min-height: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+  }
 }
