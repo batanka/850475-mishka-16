@@ -1,9 +1,7 @@
-.weekly-good {
-  padding: 30px 0 40px;
-}
-
 .weekly-good__wrapper {
   @include wrapper;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .weekly-good__header {
@@ -22,22 +20,28 @@
 }
 
 .weekly-good__info {
-  @include font-set(15px, 24px);
-
   color: $text-color;
 }
 
 .weekly-good__desc {
+  margin: 0;
   margin-bottom: 30px;
+
+  @include font-set(15px, 24px);
 }
 
 .weekly-good__table {
   width: 100%;
+  display: block;
+  padding-bottom: 28px;
+
   border-collapse: collapse;
+
+  @include font-set(15px, 20px);
 }
 
 .weekly-good__key {
-  padding: 10px 30px 10px 0;
+  padding: 10px 30px 9px 0;
   border-bottom: $border;
 }
 
@@ -68,15 +72,14 @@
   .weekly-good__wrapper {
     position: relative;
     @include wrapper-tablet;
+    padding-top: 55px;
+    padding-bottom: 70px;
     width: $tablet-width;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
   }
 
   .weekly-good__header {
     width: 100%;
+    margin-bottom: 45px;
     display: flex;
     align-items: center;
   }
@@ -91,49 +94,73 @@
     margin-left: auto;
 
     @include font-set(17px, 17px);
+    text-align: center;
   }
 
   .weekly-good__info {
-    width: 290px;
+    width: 292px;
+    margin-bottom: 30px;
     margin-right: auto;
   }
 
   .weekly-good__desc {
+    margin-bottom: 35px;
+
     @include font-set(17px, 30px);
   }
 
   .weekly-good__image {
     position: absolute;
-    right: 0;
+    right: 50px;
+    top: 160px;
   }
 
   .weekly-good__footer {
-    width: 290px;
-    margin-right: auto;
+    width: 292px;
   }
 
   .weekly-good__price {
+    margin-bottom: 33px;
     @include font-set(20px, 24px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .weekly-good__wrapper {
+    padding-top: 100px;
+    padding-bottom: 97px;
     width: $desktop-width;
+  }
+
+  .weekly-good__title {
+    @include font-set(53px, 57px);
+
+    z-index: 1;
   }
 
   .weekly-good__subtitle {
     width: 175px;
-    padding: 15px;
+    padding: 0 45px;
     margin-left: 0;
     order: -1;
   }
 
   .weekly-good__info {
-    margin-right: auto;
+    width: 467px;
+    padding-left: 175px;
+    margin-bottom: 83px;
+  }
+
+  .weekly-good__desc {
+    margin-bottom: 47px;
+  }
+
+  .weekly-good__image {
+    top: 48px;
   }
 
   .weekly-good__footer {
-    margin-right: auto;
+    width: 467px;
+    padding-left: 175px;
   }
 }

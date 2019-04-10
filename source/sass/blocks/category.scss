@@ -25,7 +25,7 @@
 @media (min-width: $tablet-width) {
   .category {
     @include wrapper-tablet;
-    width: 768px;
+    width: $tablet-width;
   }
 
   .category-list {
@@ -52,6 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .category {
-    width: 1150px;
+    width: $desktop-width;
+    margin-bottom: 20px;
   }
 }
