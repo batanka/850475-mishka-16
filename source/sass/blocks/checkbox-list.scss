@@ -1,13 +1,10 @@
-.checkbox-list__label {
-  padding-left: 62px;
-}
-
 .checkbox-list__item {
   margin-bottom: 40px;
 }
 
 .checkbox-list__label {
   position: relative;
+  padding-left: 62px;
 
   &::before {
     position: absolute;

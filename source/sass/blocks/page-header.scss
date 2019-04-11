@@ -4,14 +4,14 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    width: $tablet-width;
     @include wrapper-tablet;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: $desktop-width;
     @include wrapper-tablet;
+    width: $desktop-width;
   }
 }

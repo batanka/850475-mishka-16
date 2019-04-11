@@ -13,8 +13,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    width: $tablet-width;
     @include wrapper-tablet;
+    width: $tablet-width;
     min-height: 143px;
     display: flex;
     justify-content: space-between;

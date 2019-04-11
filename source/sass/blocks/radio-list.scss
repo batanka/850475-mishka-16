@@ -1,13 +1,10 @@
-.radio-list__label {
-  padding-left: 62px;
-}
-
 .radio-list__item {
   margin-bottom: 40px;
 }
 
 .radio-list__label {
   position: relative;
+  padding-left: 62px;
 
   &::before {
     position: absolute;
