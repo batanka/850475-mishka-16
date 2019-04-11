@@ -29,6 +29,7 @@
 
     &--index {
       min-height: 745px;
+      margin-bottom: 0;
       background: $white url("../../img/hero-tablet@1x.jpg") center center no-repeat;
     }
   }
@@ -50,7 +51,7 @@
   }
 
   .page-main__title {
-    padding: 130px 210px;
+    padding: 150px 210px;
 
     @include header(53px, 57px, 700);
   }
