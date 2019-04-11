@@ -11,7 +11,6 @@
 
 .contacts__list {
   @include list-reset;
-
   @include font-set(15px, 30px);
   color: $text-color;
 }
