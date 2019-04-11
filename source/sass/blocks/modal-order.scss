@@ -1,10 +1,23 @@
 .modal-order {
+  position: fixed;
+  display: none;
+
   @include wrapper;
-  padding: 36px 0;
+  width: 100%;
+  padding-top: 38px;
+  padding-bottom: 46px;
+
+  text-align: center;
+
+  background-color: $white;
 }
 
 .modal-order__title {
   @include header;
+  margin-bottom: 22px;
+  padding: 0 50px;
+
+  text-transform: uppercase;
 }
 
 .modal-order__text {
@@ -20,8 +33,9 @@
 .modal-order__label {
   padding: 20px 20px;
   min-width: 82px;
+  min-height: 52px;
 
-  border: $border;
+  border: $button-border;
 }
 
 .modal-order__button {
