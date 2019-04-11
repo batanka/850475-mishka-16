@@ -18,6 +18,7 @@
 }
 
 .catalog-item__title-link {
+  display: block;
   color: $black;
 }
 
@@ -52,17 +53,19 @@
 @media (min-width: $tablet-width) {
   .catalog-item {
     display: flex;
+    width: 100%;
     margin-bottom: 54px;
   }
 
   .catalog-item__link {
-    flex-shrink: 0;
     margin-bottom: 0;
   }
 
   .catalog-item__description {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    width: 334px;
   }
 
   .catalog-item__title {
@@ -97,9 +100,5 @@
 
   .catalog-item:not(:nth-child(3n)) {
     margin-right: 51px;
-  }
-
-  .catalog-item__link {
-    flex-shrink: 1;
   }
 }
