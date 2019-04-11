@@ -52,11 +52,11 @@
   cursor: pointer;
 
   &--prev {
-    background: url("../../img/icon-left-arrow.svg") center center no-repeat;
+    background: url("../img/icon-left-arrow.svg") center center no-repeat;
   }
 
   &--next {
-    background: url("../../img/icon-right-arrow.svg") center center no-repeat;
+    background: url("../img/icon-right-arrow.svg") center center no-repeat;
   }
 }
 
@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: $tablet-width;
-    background: $white url("../../img/review@1x.jpg") left top no-repeat;
+    background: $white url("../img/review@1x.jpg") left top no-repeat;
   }
 
   .reviews__wrapper {
@@ -129,7 +129,7 @@
   .reviews__wrapper {
     padding: 70px 0 100px 175px;
 
-    background: $white url("../../img/review@1x.jpg") left top no-repeat;
+    background: $white url("../img/review@1x.jpg") left top no-repeat;
   }
 
   .reviews__title {
