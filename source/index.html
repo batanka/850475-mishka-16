@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
@@ -13,20 +14,28 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--logo">
               <a class="site-list__link site-list__link--logo">
-                <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+                <picture>
+                  <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
+                </picture>
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link site-list__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <li class="site-list__item site-list__item--form">
+              <a class="site-list__link site-list__link--form" href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--search">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
+              <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item site-list__item--cart">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              <a class="site-list__link site-list__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+            <li class="site-list__item site-list__item--new">
+              <a class="site-list__link site-list__link--new" href="#">Новые поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--sale">
+              <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
             </li>
           </ul>
         </nav>
@@ -40,17 +49,18 @@
       <div class="category">
         <ul class="category-list">
           <li class="category-list__item category-list__item--interior">
-            <a class="category-list__link" href="interior.html">Предметы интерьера</a>
+            <a class="category-list__link" href="interior.html">
+              <span class="category-list__text">Предметы интерьера</span></a>
           </li>
           <li class="category-list__item category-list__item--kids-toy">
-            <a class="category-list__link" href="kids-toy.html">Детские игрушки</a>
+            <a class="category-list__link" href="kids-toy.html">
+              <span class="category-list__text">Детские игрушки</span></a>
           </li>
         </ul>
       </div>
 
       <article class="weekly-good">
         <div class="weekly-good__wrapper">
-
           <header class="weekly-good__header">
             <h2 class="weekly-good__title">Вязаные корзинки</h2>
             <b class="weekly-good__subtitle">Товар недели</b>
@@ -74,7 +84,13 @@
             </table>
           </div>
 
-          <img class="weekly-good__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзинка Тиффани/серый">
+          <div class="weekly-good__image">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x">
+              <img src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка Тиффани/серый">
+            </picture>
+          </div>
 
           <footer class="weekly-good__footer">
             <p class="weekly-good__price">Цена: 990 руб.</p>
@@ -142,16 +158,25 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="img/logo-footer.svg" alt="Временно">
+        </a>
         <div class="page-footer__socials social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram"></a>
+              <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram">
+                <img src="img/icon-insta.svg" alt="Временно">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook"></a>
+              <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook">
+                <img src="img/icon-fb.svg" alt="Временно">
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter"></a>
+              <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter">
+                <img src="img/icon-twitter.svg" alt="Временно">
+              </a>
             </li>
           </ul>
         </div>

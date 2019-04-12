@@ -20,3 +20,39 @@
 
   color: #ffffff;
 }
+
+
+@media (min-width: $tablet-width) {
+  .category {
+    @include wrapper-tablet;
+    width: $tablet-width;
+  }
+
+  .category-list {
+    display: flex;
+  }
+
+  .category-list__item {
+    min-height: 119px;
+    width: 50%;
+  }
+
+  .category-list__link {
+    padding-top: 32px;
+    padding-left: 35px;
+
+    @include font-set(20px, 30px, 700);
+  }
+
+  .category-list__text {
+    display: block;
+    width: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category {
+    width: $desktop-width;
+    margin-bottom: 20px;
+  }
+}

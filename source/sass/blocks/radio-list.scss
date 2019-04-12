@@ -1,0 +1,21 @@
+.radio-list__item {
+  margin-bottom: 40px;
+}
+
+.radio-list__label {
+  position: relative;
+  padding-left: 62px;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    content: "";
+    width: 40px;
+    height: 40px;
+
+    border: $border-width solid $text-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

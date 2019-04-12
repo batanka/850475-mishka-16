@@ -9,5 +9,11 @@ $main-color: #63d1bb;
 $bg-color: #f1f1f1;
 
 $border-color: #ececec;
+$border-min-width: 1px;
 $border-width: 2px;
-$border: $border-width solid $border-color;
+$border: $border-min-width solid $border-color;
+$button-border: $border-width solid $text-color;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;

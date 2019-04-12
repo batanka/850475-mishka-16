@@ -1,9 +1,28 @@
 .social {
+  width: 143px;
   min-height: 80px;
+  padding: 25px 0 20px;
+  margin: 0 auto;
 
   border-bottom: $border;
 }
 
 .social__list {
   @include list-reset;
+  display: flex;
+  align-items: center;
+}
+
+.social__item:not(:nth-child(3)) {
+  margin-right: 40px;
+}
+
+.social__item {
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+  }
 }

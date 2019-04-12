@@ -13,7 +13,14 @@
 }
 
 @mixin wrapper {
+  margin: 0 auto;
   padding: 0 30px;
+  width: 100%;
+}
+
+@mixin wrapper-tablet {
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 @mixin font-set($size: 17px, $line-height: 24px, $weight:null) {
