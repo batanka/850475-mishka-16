@@ -83,7 +83,6 @@
 
   .catalog-item__bottom {
     width: 100%;
-    // margin-top: auto;
   }
 
   .catalog-item__price {
@@ -101,7 +100,6 @@
     margin-bottom: 57px;
     width: 30%;
     flex-direction: column;
-    // justify-content: flex-start;
   }
 
   .catalog-item:not(:nth-child(3n)) {
