@@ -33,6 +33,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav{
+    @include wrapper-tablet;
+    width: $tablet-width;
+  }
+
   .site-list {
     min-height: 88px;
   }
@@ -98,6 +103,11 @@
 
 
 @media (min-width: $desktop-width) {
+  .main-nav{
+    @include wrapper-tablet;
+    width: $desktop-width;
+  }
+
   .site-list__item {
     &--catalog {
       width: 185px;

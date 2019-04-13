@@ -1,17 +1,3 @@
 .page-header {
   width: 100%;
 }
-
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    @include wrapper-tablet;
-    width: $tablet-width;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__wrapper {
-    @include wrapper-tablet;
-    width: $desktop-width;
-  }
-}

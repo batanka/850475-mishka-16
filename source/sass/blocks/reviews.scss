@@ -107,9 +107,11 @@
     margin: 0;
     right: 50px;
     bottom: 100px;
-    // margin: -80px 0 0 auto;
     width: 167px;
-    order: 2;
+  }
+
+  .reviews__control {
+    border: none;
   }
 
   .reviews__button {
@@ -121,6 +123,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include wrapper-tablet;
+    width: $desktop-width;
     position: relative;
 
     background: none;
@@ -129,11 +132,15 @@
   .reviews__wrapper {
     padding: 70px 0 100px 175px;
 
-    background: $white url("../img/review@1x.jpg") left top no-repeat;
+    background: $bg-color url("../img/review@1x.jpg") left top no-repeat;
   }
 
   .reviews__title {
     @include header(53px, 57px);
     margin-bottom: 45px;
+  }
+
+  .reviews__controls {
+    right: 0;
   }
 }
