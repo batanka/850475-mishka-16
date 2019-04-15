@@ -1,15 +1,17 @@
 .radio-list__item {
-  margin-bottom: 40px;
+  margin-bottom: 4px;
 }
 
 .radio-list__label {
   position: relative;
-  padding-left: 62px;
+  display: block;
+  width: 220px;
+  padding: 10px 0 10px 62px;
 
   &::before {
     position: absolute;
-    top: -3px;
-    left: -5px;
+    top: 1px;
+    left: 0;
     content: "";
     width: 40px;
     height: 40px;
@@ -17,5 +19,55 @@
     border: $border-width solid $text-color;
     border-radius: 50%;
     cursor: pointer;
+  }
+
+  &::after {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    background-color: $main-color;
+    border-radius: 50%;
+
+    display: none;
+  }
+}
+
+.radio-list__input:checked + .radio-list__label::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-list__item {
+    width: 50%;
+    margin-bottom: 26px;
+  }
+
+  .radio-list__label {
+    width: 100%;
+    padding: 16px 0 16px 80px;
+
+    &::before {
+      top: 1px;
+      left: 0;
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      top: 16px;
+      left: 15px;
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-list__item {
+    width: 350px;
   }
 }

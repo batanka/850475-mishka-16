@@ -1,3 +1,22 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  right: 30px;
+
+  border: none;
+  background: transparent url("../img/icon-menu-close.svg") center center no-repeat;
+
+  &--close {
+    background: transparent url("../img/icon-menu-open.svg") center center no-repeat;
+  }
+}
+
 .site-list {
   @include list-reset;
   display: flex;
@@ -33,6 +52,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    @include wrapper-tablet;
+    width: $tablet-width;
+  }
+
   .site-list {
     min-height: 88px;
   }
@@ -98,6 +122,11 @@
 
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    @include wrapper-tablet;
+    width: $desktop-width;
+  }
+
   .site-list__item {
     &--catalog {
       width: 185px;

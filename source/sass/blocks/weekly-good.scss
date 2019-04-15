@@ -54,7 +54,6 @@
 }
 
 .weekly-good__image {
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -103,9 +102,9 @@
   }
 
   .weekly-good__info {
-    width: 292px;
+    width: 50%;
+    padding-right: 44px;
     margin-bottom: 30px;
-    margin-right: auto;
   }
 
   .weekly-good__desc {
@@ -152,7 +151,7 @@
   }
 
   .weekly-good__info {
-    width: 467px;
+    padding-right: 58px;
     padding-left: 175px;
     margin-bottom: 83px;
   }
