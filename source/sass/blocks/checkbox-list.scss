@@ -4,11 +4,13 @@
 
 .checkbox-list__label {
   position: relative;
+  display: block;
+  width: 220px;
   padding-left: 62px;
 
   &::before {
     position: absolute;
-    top: -3px;
+    top: -8px;
     left: -5px;
     content: "";
     width: 40px;
@@ -16,5 +18,30 @@
 
     border: $border-width solid $text-color;
     cursor: pointer;
+  }
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    content: "";
+    width: 22px;
+    height: 16px;
+
+    background: url("../img/icon-tick.svg") center center no-repeat;
+    background-size: cover;
+
+    display: none;
+  }
+}
+
+.checkbox-list__input:checked + .checkbox-list__label::after {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

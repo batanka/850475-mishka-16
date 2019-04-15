@@ -24,3 +24,18 @@
   color: $text-color;
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .field-list {
+    width: 75%;
+  }
+
+  .field-list__item {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .field-list__label {
+    margin-right: 25px;
+  }
+}
