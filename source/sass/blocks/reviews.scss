@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     width: $tablet-width;
-    background: $white url("../img/review@1x.jpg") left top no-repeat;
+    background: url("../img/review@1x.jpg") left top no-repeat;
   }
 
   .reviews__wrapper {
@@ -132,7 +132,7 @@
   .reviews__wrapper {
     padding: 70px 0 100px 175px;
 
-    background: $bg-color url("../img/review@1x.jpg") left top no-repeat;
+    background: url("../img/review@1x.jpg") left top no-repeat;
   }
 
   .reviews__title {
