@@ -37,7 +37,7 @@
 }
 
 .radio-list__input:checked + .radio-list__label::after {
-  display: block
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
