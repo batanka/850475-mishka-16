@@ -1,7 +1,10 @@
+.field-list__item {
+  margin-bottom: 24px;
+}
+
 .field-list__input {
   width: 100%;
   height: 50px;
-  margin-bottom: 20px;
   padding: 16px 0;
 
   color: $text-color;
@@ -33,9 +36,14 @@
   .field-list__item {
     display: flex;
     align-items: baseline;
+    margin-bottom: 26px;
   }
 
   .field-list__label {
     margin-right: 25px;
+  }
+
+  .field-list__input::placeholder {
+    @include font-set(19px, 18px);
   }
 }
