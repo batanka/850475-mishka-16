@@ -1,11 +1,10 @@
 // ПРОВЕРИТЬ
-.order-form {
-  margin: 0 auto;
-}
+// .order-form {
+//   margin: 0 auto;
+// }
 
 .order__text {
-  @include wrapper;
-  margin: 0;
+  @include wrapper-tablet;
   margin-bottom: 20px;
 
   @include font-set(13px, 24px);
@@ -80,7 +79,7 @@
 }
 
 .order-form__bottom {
-  @include wrapper;
+  padding: 0 30px;
   margin-bottom: 55px;
 }
 
@@ -104,7 +103,6 @@
   }
 
   .order__text {
-    @include wrapper-tablet;
     margin-bottom: 20px;
 
     @include font-set(17px, 30px);
@@ -154,6 +152,9 @@
   }
 
   .order-form__bottom {
+    @include wrapper-tablet;
+    width: $tablet-width;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -162,9 +163,33 @@
   .order-form__text {
     width: 300px;
     order: 1;
+
+    text-align: right;
   }
 
   .order-form__button {
     width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__text {
+    width: $desktop-width;
+    padding: 0 225px;
+  }
+
+  .order-form__wrapper {
+    width: $desktop-width;
+  }
+
+  .order-form__legend {
+    width: 175px;
+
+    text-align: center;
+  }
+
+  .order-form__bottom {
+    width: $desktop-width;
+    padding: 0 225px;
   }
 }

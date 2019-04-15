@@ -28,4 +28,14 @@
   .textarea {
     width: 75%;
   }
+
+  .textarea__input::placeholder {
+    @include font-set(19px, 18px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    width: 700px;
+  }
 }

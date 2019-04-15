@@ -47,3 +47,9 @@
     @include font-set(19px, 18px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-list {
+    width: 700px;
+  }
+}

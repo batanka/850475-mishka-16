@@ -70,3 +70,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox-list {
+    padding-right: 24px;
+  }
+}

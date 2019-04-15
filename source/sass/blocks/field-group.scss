@@ -46,4 +46,14 @@
   .field-group__input {
     background-color: transparent;
   }
+
+  .field-group__input::placeholder {
+    @include font-set(19px, 18px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-group {
+    width: 700px;
+  }
 }

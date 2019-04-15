@@ -42,6 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .radio-list__item {
+    width: 50%;
     margin-bottom: 26px;
   }
 
@@ -64,3 +65,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .radio-list__item {
+    width: 350px;
+  }
+}
+
