@@ -134,8 +134,16 @@
     }
   }
 
-  .order-form__fieldset:nth-child(2n) {
-    background-color: $bg-color;
+  .order-form__fieldset {
+    &:nth-child(2) {
+      background-color: $bg-color;
+    }
+    &:nth-child(4) {
+      background-color: $bg-color;
+    }
+    &:nth-child(5) {
+      background-color: $bg-color;
+    }
   }
 
   .order-form__legend {
