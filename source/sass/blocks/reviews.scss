@@ -75,7 +75,7 @@
   .reviews__wrapper {
     @include wrapper-tablet;
     padding-top: 75px;
-    padding-bottom: 133px;
+    padding-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -108,7 +108,7 @@
     position: absolute;
     margin: 0;
     right: 50px;
-    bottom: 136px;
+    bottom: 50px;
     width: 167px;
   }
 

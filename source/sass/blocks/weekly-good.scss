@@ -1,7 +1,7 @@
 .weekly-good__wrapper {
   @include wrapper;
   padding-top: 26px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 }
 
 .weekly-good__header {
@@ -78,7 +78,7 @@
     @include wrapper-tablet;
     position: relative;
     padding-top: 25px;
-    padding-bottom: 70px;
+    padding-bottom: 54px;
     width: $tablet-width;
   }
 

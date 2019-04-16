@@ -12,6 +12,8 @@
     background-image: url("../../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: contain;
+
+    display: none;
   }
 }
 
@@ -19,13 +21,13 @@
   position: relative;
   width: 100%;
 
-  &::after {
+  &::before {
     position: absolute;
     content: "";
     height: 6px;
     width: 100%;
     left: 0;
-    bottom: 0;
+    top: 0;
     background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: contain;
@@ -35,6 +37,7 @@
 @media (min-width: $tablet-width) {
   .zigzag {
     &::after {
+      display: block;
       height: 24px;
     }
 
@@ -44,7 +47,7 @@
   }
 
   .zigzag-line {
-    &::after {
+    &::before {
       height: 17px;
     }
   }
@@ -57,7 +60,7 @@
     }
 
     .zigzag-line {
-      &::after {
+      &::before {
         height: 23px;
       }
     }

@@ -1,6 +1,6 @@
 .contacts__wrapper {
   @include wrapper;
-  margin-top: 40px;
+  padding-top: 41px;
   padding-bottom: 40px;
 }
 
@@ -56,7 +56,8 @@
   .contacts__wrapper {
     @include wrapper-tablet;
     width: $tablet-width;
-    margin-top: 60px;
+    margin-top: 66px;
+    padding-top: 78px;
     padding-bottom: 57px;
   }
 
