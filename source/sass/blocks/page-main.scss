@@ -10,15 +10,19 @@
   &--index {
     margin: 0;
     min-height: 283px;
-    background: $bg-color url("../img/hero-mobile@1x.jpg") center center no-repeat;
+    background: $bg-color url("../img/hero-mobile@1x.jpg") center 20% no-repeat;
   }
 }
 
 .page-main__title {
   @include header(27px, 30px, 700);
   width: 260px;
-  padding: 75px 0;
+  padding: 70px 0;
   margin: 0 auto;
+}
+
+.page-main__text {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

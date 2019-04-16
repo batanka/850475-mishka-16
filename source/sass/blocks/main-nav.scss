@@ -42,12 +42,17 @@
 
 .site-list__link {
   display: block;
-  padding: 28px 0 27px 76px;
+  padding: 26px 0 28px 75px;
 
   color: #000000;
 
   &--logo {
-    padding: 22px 0;
+    padding: 21px 0 16px;
+  }
+
+  &--logo a {
+    width: 86px;
+    height: 35px;
   }
 }
 
@@ -110,6 +115,11 @@
   }
 
   .site-list__link {
+    &--logo a {
+      width: 113px;
+      height: 46px;
+    }
+
     &--catalog {
       padding: 20px 20px 20px 0;
     }
@@ -119,7 +129,6 @@
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .main-nav {
@@ -181,6 +190,11 @@
   }
 
   .site-list__link {
+    &--logo a {
+      width: 149px;
+      height: 72px;
+    }
+
     &--catalog {
       padding: 32px 35px 32px 0;
     }

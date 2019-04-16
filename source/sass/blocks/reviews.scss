@@ -5,13 +5,13 @@
 .reviews__wrapper {
   @include wrapper;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 46px;
 }
 
 .reviews__title {
   @include header;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .reviews__item {
@@ -22,10 +22,11 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .reviews__author {
+  @include font-set(17px, 30px);
   font-style: normal;
 }
 
@@ -39,8 +40,8 @@
 
 .reviews__controls {
   display: flex;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 29px;
+  margin-bottom: 38px;
 }
 
 .reviews__control {

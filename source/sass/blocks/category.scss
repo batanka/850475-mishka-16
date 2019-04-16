@@ -3,6 +3,8 @@
 }
 
 .category-list__item {
+  width: 100%;
+
   &--interior {
     background-color: $main-color;
   }
@@ -14,11 +16,16 @@
 
 .category-list__link {
   display: block;
-  padding: 30px;
+  padding: 25px 29px 30px;
 
   @include font-set(19px, 24px, 700);
 
   color: #ffffff;
+}
+
+.category-list__text {
+  display: block;
+  width: 50%;
 }
 
 

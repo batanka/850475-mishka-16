@@ -1,12 +1,12 @@
 .about__wrapper {
   @include wrapper;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .about__title {
   @include header;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .about__list {
@@ -15,9 +15,33 @@
 
 .about__item {
   padding-top: 58px;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 
   @include font-set(17px, 20px, 700);
+
+  &--eco {
+    background: url("../img/icon-feature-flower.svg") 7px 2px no-repeat;
+  }
+
+  &--style {
+    background: url("../img/icon-feature-money.svg") 0 4px no-repeat;
+  }
+
+  &--likes {
+    background: url("../img/icon-feature-heart.svg") 7px 9px no-repeat;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-ball.svg") 6px 6px no-repeat;
+  }
+
+  &--support {
+    background: url("../img/icon-feature-rocket.svg") 0 7px no-repeat;
+  }
+
+  &--gift {
+    background: url("../img/icon-feature-gift.svg") 4px 5px no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
