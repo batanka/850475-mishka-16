@@ -31,17 +31,27 @@
     margin-bottom: 60px;
 
     &--index {
-      min-height: 745px;
+      min-height: 626px;
       margin-bottom: 0;
-      background: $bg-color url("../img/hero-tablet@1x.jpg") center center no-repeat;
+      background: $bg-color url("../img/hero-tablet@1x.jpg") 50% 0 no-repeat;
     }
   }
 
   .page-main__title {
     width: 500px;
-    padding: 130px 0;
+    padding: 90px 0;
 
     @include font-set(43px, 50px, 700);
+  }
+
+  .page-main__text {
+    display: block;
+    width: 233px;
+    margin: 0;
+    padding: 20px 0;
+    margin-left: auto;
+
+    @include font-set(15px, 24px);
   }
 }
 

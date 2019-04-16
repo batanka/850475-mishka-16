@@ -7,10 +7,16 @@
 
   &--interior {
     background-color: $main-color;
+    background-image: url("../../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 87% center;
   }
 
   &--kids-toy {
-    background-color: #56c3b2;
+    background-color: $main-color--darker;
+    background-image: url("../../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 87% center;
   }
 }
 
@@ -31,11 +37,13 @@
 
 @media (min-width: $tablet-width) {
   .category {
-    @include wrapper-tablet;
-    width: $tablet-width;
+    background-color: $bg-color;
   }
 
   .category-list {
+    @include wrapper-tablet;
+    width: $tablet-width;
+    margin-bottom: 20px;
     display: flex;
   }
 
@@ -45,7 +53,7 @@
   }
 
   .category-list__link {
-    padding-top: 32px;
+    padding-top: 27px;
     padding-left: 35px;
 
     @include font-set(20px, 30px, 700);
@@ -58,7 +66,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .category {
+  .category-list {
     width: $desktop-width;
     margin-bottom: 20px;
   }

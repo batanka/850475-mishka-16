@@ -1,0 +1,65 @@
+.zigzag {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+.zigzag-line {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .zigzag {
+    &::after {
+      height: 24px;
+    }
+
+    &--category::after {
+      bottom: -8px;
+    }
+  }
+
+  .zigzag-line {
+    &::after {
+      height: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag {
+    &::after {
+      height: 34px;
+    }
+
+    .zigzag-line {
+      &::after {
+        height: 23px;
+      }
+    }
+  }
+}

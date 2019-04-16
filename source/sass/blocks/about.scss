@@ -47,14 +47,14 @@
 @media (min-width: $tablet-width) {
   .about__wrapper {
     @include wrapper-tablet;
-    padding-top: 58px;
-    margin-bottom: 22px;
+    padding-top: 48px;
+    margin-bottom: 32px;
     width: $tablet-width;
   }
 
   .about__title {
     @include header(43px, 50px, 700);
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 
   .about__list {
@@ -66,7 +66,7 @@
   .about__item {
     width: 50%;
     padding-right: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 
     @include font-set(20px, 22px);
 

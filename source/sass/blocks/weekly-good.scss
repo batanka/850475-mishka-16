@@ -77,7 +77,7 @@
   .weekly-good__wrapper {
     @include wrapper-tablet;
     position: relative;
-    padding-top: 55px;
+    padding-top: 25px;
     padding-bottom: 70px;
     width: $tablet-width;
   }
@@ -117,7 +117,7 @@
   .weekly-good__image {
     position: absolute;
     right: 50px;
-    top: 160px;
+    top: 130px;
   }
 
   .weekly-good__footer {

@@ -75,7 +75,7 @@
   .reviews__wrapper {
     @include wrapper-tablet;
     padding-top: 75px;
-    padding-bottom: 100px;
+    padding-bottom: 133px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -84,11 +84,16 @@
 
   .reviews__title {
     @include header(43px, 50px);
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .reviews__list {
     order: 1;
+  }
+
+  .reviews__text {
+    @include font-set(17px, 30px);
+    margin-bottom: 55px;
   }
 
   .reviews__author {
@@ -99,15 +104,11 @@
     @include font-set(18px, 24px);
   }
 
-  .reviews__text {
-    margin-bottom: 57px;
-  }
-
   .reviews__controls {
     position: absolute;
     margin: 0;
     right: 50px;
-    bottom: 100px;
+    bottom: 136px;
     width: 167px;
   }
 

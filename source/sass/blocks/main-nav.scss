@@ -50,7 +50,7 @@
     padding: 21px 0 16px;
   }
 
-  &--logo a {
+  &--logo img {
     width: 86px;
     height: 35px;
   }
@@ -95,8 +95,8 @@
     }
 
     &--catalog {
-      width: 160px;
-      margin-right: 10px;
+      width: 147px;
+      margin-right: 20px;
       order: 4;
 
       @include font-set(15px, 24px, 700);
@@ -105,7 +105,8 @@
     }
 
     &--form {
-      width: 160px;
+      width: 147px;
+      margin-right: 20px;
       order: 5;
 
       @include font-set(15px, 24px, 700);
@@ -115,17 +116,30 @@
   }
 
   .site-list__link {
-    &--logo a {
+    display: block;
+
+    &--logo {
       width: 113px;
       height: 46px;
+      padding: 22px 0 12px;
     }
 
     &--catalog {
-      padding: 20px 20px 20px 0;
+      padding: 20px 0;
     }
 
     &--form {
-      padding: 20px 20px 20px 0;
+      padding: 20px 0;
+    }
+
+    &--cart {
+      padding: 32px 0 30px 83px;
+    }
+
+    &--logo img {
+      display: block;
+      width: 113px;
+      height: 46px;
     }
   }
 }
