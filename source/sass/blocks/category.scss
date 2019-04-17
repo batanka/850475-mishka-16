@@ -42,7 +42,8 @@
 
   .category-list {
     @include wrapper-tablet;
-    width: $tablet-width;
+    // width: $tablet-width;
+    width: 100%;
     margin-bottom: 20px;
     display: flex;
   }

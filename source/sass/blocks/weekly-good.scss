@@ -114,6 +114,10 @@
     @include font-set(17px, 30px);
   }
 
+  .weekly-good__table-value {
+    width: 193px;
+  }
+
   .weekly-good__image {
     position: absolute;
     right: 50px;
