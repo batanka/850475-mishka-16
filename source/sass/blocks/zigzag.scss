@@ -9,7 +9,7 @@
     width: 100%;
     left: 0;
     bottom: 0;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: contain;
 
@@ -28,7 +28,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: contain;
   }
@@ -58,11 +58,11 @@
     &::after {
       height: 34px;
     }
+  }
 
-    .zigzag-line {
-      &::before {
-        height: 23px;
-      }
+  .zigzag-line {
+    &::before {
+      height: 23px;
     }
   }
 }
