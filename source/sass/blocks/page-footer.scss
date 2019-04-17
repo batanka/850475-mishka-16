@@ -1,4 +1,6 @@
 .page-footer {
+  min-height: 80px;
+
   background-color: $bg-color;
 }
 
@@ -24,6 +26,7 @@
   .page-footer__logo {
     display: block;
     width: 102px;
+    height: 34px;
   }
 }
 

@@ -4,17 +4,18 @@
 
 .category-list__item {
   width: 100%;
+  min-height: 103px;
 
   &--interior {
     background-color: $main-color;
-    background-image: url("../../img/icon-interior.svg");
+    background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: 87% center;
   }
 
   &--kids-toy {
     background-color: $main-color--darker;
-    background-image: url("../../img/icon-toy.svg");
+    background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     background-position: 87% center;
   }

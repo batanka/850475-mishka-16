@@ -1,6 +1,6 @@
 .page-main__intro {
   margin-bottom: 30px;
-
+  // max-width: 1150px;
   min-height: 177px;
 
   text-align: center;
@@ -17,6 +17,7 @@
 .page-main__title {
   @include header(27px, 30px, 700);
   width: 260px;
+  // max-width: 1150px;
   padding: 70px 0;
   margin: 0 auto;
 }
@@ -48,12 +49,13 @@
 
   .page-main__text {
     display: block;
-    width: 233px;
-    margin: 0;
-    padding: 20px 0;
-    margin-left: auto;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 20px 50px 20px 350px;
 
     @include font-set(15px, 24px);
+    text-align: right;
   }
 }
 

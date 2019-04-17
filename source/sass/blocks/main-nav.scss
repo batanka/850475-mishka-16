@@ -59,7 +59,8 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     @include wrapper-tablet;
-    width: $tablet-width;
+    // width: $tablet-width;
+    max-width: 1150px;
   }
 
   .site-list {
@@ -91,6 +92,7 @@
 
     &--cart {
       width: 265px;
+      margin-left: auto;
       order: 3;
     }
 
