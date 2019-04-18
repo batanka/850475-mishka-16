@@ -1,6 +1,5 @@
 .page-main__intro {
   margin-bottom: 30px;
-  // max-width: 1150px;
   min-height: 177px;
 
   text-align: center;
@@ -17,7 +16,6 @@
 .page-main__title {
   @include header(27px, 30px, 700);
   width: 260px;
-  // max-width: 1150px;
   padding: 70px 0;
   margin: 0 auto;
 }
@@ -29,7 +27,7 @@
 @media (min-width: $tablet-width) {
   .page-main__intro {
     margin-top: -60px;
-    margin-bottom: 60px;
+    margin-bottom: 77px;
 
     border-top: $border;
 
@@ -42,9 +40,13 @@
 
   .page-main__title {
     width: 500px;
-    padding: 92px 0;
+    padding: 35px 0 80px;
 
     @include font-set(43px, 50px, 700);
+
+    &--index {
+      padding: 92px 0;
+    }
   }
 
   .page-main__text {
@@ -52,10 +54,16 @@
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
-    padding: 15px 50px 20px 430px;
+    padding: 15px 50px 20px 450px;
 
     @include font-set(15px, 24px);
     text-align: right;
+  }
+}
+
+@media (min-width: 890px) {
+  .page-main__text {
+    padding-left: 600px;
   }
 }
 

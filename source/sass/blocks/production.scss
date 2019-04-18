@@ -4,25 +4,38 @@
 }
 
 .production__wrapper {
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 33px;
   margin-bottom: 58px;
   border: $border;
 }
 
 .production__title-wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding: 0 42px 0 90px;
 }
 
 .production__title {
   @include header;
+  position: relative;
+
   @include font-set(17px, 24px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -57px;
+    width: 32px;
+    height: 22px;
+
+    background: url("../../img/icon-video.svg") center center no-repeat;
+  }
 }
 
 .production__top {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   text-align: center;
 }
@@ -45,7 +58,7 @@
 
 .production__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include font-set(13px, 24px);
 }

@@ -97,9 +97,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about__wrapper {
-    padding: 84px 225px 5px;
+  .about {
+    @include wrapper-tablet;
     width: $desktop-width;
+  }
+
+  .about__wrapper {
+    padding: 84px 175px 5px;
+    width: 100%;
   }
 
   .about__title {
