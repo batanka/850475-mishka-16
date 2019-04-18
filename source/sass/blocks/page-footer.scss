@@ -16,7 +16,11 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     @include wrapper-tablet;
-    width: $tablet-width;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    // width: $tablet-width;
+    width: 87%;
+    max-width: 1150px;
     min-height: 143px;
     display: flex;
     justify-content: space-between;
@@ -25,6 +29,11 @@
 
   .page-footer__logo {
     display: block;
+    padding: 5px 0;
+    width: 185px;
+  }
+
+  .page-footer__logo img {
     width: 102px;
     height: 34px;
   }

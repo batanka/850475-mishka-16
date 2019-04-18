@@ -95,7 +95,7 @@
 
   .weekly-good__subtitle {
     width: 110px;
-    padding-right: 27px;
+    padding-right: 18px;
     margin-left: auto;
 
     @include font-set(17px, 17px);
@@ -137,8 +137,8 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good__wrapper {
-    padding-top: 100px;
-    padding-bottom: 97px;
+    padding-top: 102px;
+    padding-bottom: 74px;
     width: $desktop-width;
   }
 
@@ -150,7 +150,7 @@
 
   .weekly-good__subtitle {
     width: 175px;
-    padding: 0 45px;
+    padding: 4px 42px 0 30px;
     margin-left: 0;
     order: -1;
   }

@@ -98,11 +98,11 @@
 
 @media (min-width: $desktop-width) {
   .about__wrapper {
-    padding: 60px 225px 0;
+    padding: 84px 225px 5px;
     width: $desktop-width;
   }
 
   .about__title {
-    @include header(53px, 57px);
+    @include font-set(53px, 57px);
   }
 }

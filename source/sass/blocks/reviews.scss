@@ -132,17 +132,27 @@
   }
 
   .reviews__wrapper {
-    padding: 70px 0 100px 175px;
+    padding: 70px 0 94px 175px;
 
     background: url("../img/review@1x.jpg") left top no-repeat;
   }
 
   .reviews__title {
     @include header(53px, 57px);
-    margin-bottom: 45px;
+    margin-bottom: 49px;
+  }
+
+  .reviews__text {
+    padding-right: 100px;
+    margin-bottom: 37px;
+  }
+
+  .reviews__author-name {
+    @include font-set(17px, 24px);
   }
 
   .reviews__controls {
     right: 0;
+    bottom: 97px;
   }
 }

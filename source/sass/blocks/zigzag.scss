@@ -39,10 +39,7 @@
     &::after {
       display: block;
       height: 24px;
-    }
-
-    &--category::after {
-      bottom: -8px;
+      bottom: -11px;
     }
   }
 
@@ -57,6 +54,7 @@
   .zigzag {
     &::after {
       height: 34px;
+      bottom: -17px;
     }
   }
 
