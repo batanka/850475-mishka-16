@@ -24,13 +24,13 @@
 }
 
 .production__title-wrapper {
-  margin-bottom: 23px;
-  padding: 0 42px 0 90px;
+  margin-bottom: 25px;
 }
 
 .production__title {
   @include header;
   position: relative;
+  padding: 0 42px 0 90px;
 
   @include font-set(17px, 24px);
 
@@ -38,7 +38,7 @@
     position: absolute;
     content: "";
     top: 10px;
-    left: -57px;
+    left: 32px;
     width: 32px;
     height: 22px;
 
@@ -59,8 +59,8 @@
   height: 78px;
   left: 50%;
   top: 50%;
-  margin-top: -51px;
-  margin-left: -39px;
+  margin-top: -41px;
+  margin-left: -51px;
 
   border: none;
   background: url("../img/icon-play.svg") center center no-repeat;
@@ -114,17 +114,18 @@
 
   .production__title-wrapper {
     width: 100%;
-    padding-left: 105px;
     margin-bottom: 32px;
   }
 
   .production__title {
-    @include font-set(20px, 24px);
-  }
+    padding-left: 105px;
 
-  .production__title::before {
-    top: 0;
-    left: -63px;
+    @include font-set(20px, 24px);
+
+    &::before {
+      top: 0;
+      left: 40px;
+    }
   }
 
   .production__bottom {
@@ -147,6 +148,7 @@
     position: relative;
     min-height: 455px;
     padding-bottom: 0;
+    margin-bottom: 103px;
     flex-direction: column;
     align-items: flex-end;
   }
@@ -160,11 +162,17 @@
 
   .production__title-wrapper {
     width: 350px;
-    padding: 41px 58px 0 62px;
+    padding-top: 45px;
+    margin-bottom: 34px;
   }
 
   .production__title {
-    padding-top: 53px;
+    padding: 48px 58px 0 62px;
+
+    &::before {
+      top: 0;
+      left: 62px;
+    }
   }
 
   .production__bottom {

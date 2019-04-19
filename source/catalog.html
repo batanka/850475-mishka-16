@@ -45,7 +45,7 @@
     </header>
 
     <main class="page-main">
-      <div class="page-main__intro zigzag">
+      <div class="page-main__intro page-main__intro--catalog zigzag">
         <p class="page-main__text">Бесплатная доставка по России</p>
         <h1 class="page-main__title">Каталог товаров</h1>
       </div>
@@ -115,7 +115,7 @@
             <div class="catalog-item__description">
               <div class="catalog-item__top">
                 <a class="catalog-item__title-link" href="#">
-                  <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+                  <h2 class="catalog-item__title">Большая корзинка для&nbsp;игрушек</h2>
                 </a>
                 <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
               </div>
@@ -156,7 +156,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" href="index.html">
             <img src="img/logo-footer.svg" alt="Временно">
           </a>
         <div class="page-footer__socials social">
@@ -188,3 +188,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+    <div class="modal-order">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+      <p class="modal-order__text">Выберите размер:</p>
+      <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-order__input-wrapper">
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-S" value="S" checked>
+          <label class="modal-order__label" for="size-S">S</label>
+
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-M" value="M">
+          <label class="modal-order__label" for="size-M">M</label>
+
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-L" value="L">
+          <label class="modal-order__label" for="size-L">L</label>
+        </div>
+        <button class="button modal-order__button" type="submit">Добавить</button>
+      </form>
+      <button class="modal-order__close-button button visually-hidden visually-hidden--focusable" type="button" aria-label="Закрыть окно"></button>
+    </div>
+
+  </body>
+</html>

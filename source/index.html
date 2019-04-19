@@ -123,7 +123,7 @@
               В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author">
                 <b class="reviews__author-name">Анастасия Красильникова</b>
-                <p class="reviews__tag">@misssssiskras</p>
+                <span class="reviews__tag">@misssssiskras</span>
               </cite>
             </blockquote>
           </div>
@@ -192,21 +192,24 @@
       </div>
     </footer>
 
+    <div class="overlay"></div>
     <div class="modal-order">
       <h2 class="modal-order__title">Добавить в корзину</h2>
       <p class="modal-order__text">Выберите размер:</p>
       <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="visually-hidden" type="radio" name="size" id="size-S" value="S" checked>
-        <label class="modal-order__label" for="size-S">S</label>
+        <div class="modal-order__input-wrapper">
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-S" value="S" checked>
+          <label class="modal-order__label" for="size-S">S</label>
 
-        <input class="visually-hidden" type="radio" name="size" id="size-M" value="M">
-        <label class="modal-order__label" for="size-S">M</label>
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-M" value="M">
+          <label class="modal-order__label" for="size-M">M</label>
 
-        <input class="visually-hidden" type="radio" name="size" id="size-L" value="L">
-        <label class="modal-order__label" for="size-S">L</label>
-
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-L" value="L">
+          <label class="modal-order__label" for="size-L">L</label>
+        </div>
         <button class="button modal-order__button" type="submit">Добавить</button>
       </form>
+      <button class="modal-order__close-button button visually-hidden visually-hidden--focusable" type="button" aria-label="Закрыть окно"></button>
     </div>
 
   </body>
