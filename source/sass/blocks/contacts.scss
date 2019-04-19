@@ -38,6 +38,16 @@
 
   text-decoration: underline $main-color;
   color: $text-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  &:active {
+    color: $main-color;
+    opacity: 0.3;
+  }
 }
 
 .contacts__adress {

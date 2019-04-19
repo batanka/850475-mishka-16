@@ -77,6 +77,17 @@
     &--kids-toy::after {
       right: 35px;
     }
+
+    &:hover,
+    &:focus {
+      min-height: 124px;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
+
+    &:active .category-list__text {
+      opacity: 0.3;
+    }
   }
 
   .category-list__link {

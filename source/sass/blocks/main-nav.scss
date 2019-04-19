@@ -55,6 +55,15 @@
     width: 86px;
     height: 35px;
   }
+
+  &:hover[href],
+  &:focus[href] {
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item svg {
@@ -65,6 +74,11 @@
   margin-top: -9px;
   max-width: 21px;
   max-height: 21px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 
@@ -133,6 +147,7 @@
     display: block;
 
     &--logo {
+      width: 113px;
       padding: 22px 0 12px;
     }
 
@@ -225,6 +240,7 @@
     }
 
     &--logo {
+      width: 149px;
       padding: 9px 0 7px;
     }
 

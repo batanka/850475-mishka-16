@@ -10,4 +10,17 @@
   background-color: $white;
   border: $button-border;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $text-color;
+    color: $white;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $text-color;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
 }
