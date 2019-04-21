@@ -1,6 +1,6 @@
 .order__text {
-  @include wrapper-tablet;
-  margin-bottom: 20px;
+  @include wrapper;
+  margin-bottom: 10px;
 
   @include font-set(13px, 24px);
 }
@@ -13,7 +13,7 @@
   border: none;
 
   &--radio {
-    padding: 10px 0 21px;
+    padding: 10px 0 9px;
   }
 
   &--checkbox {
@@ -42,7 +42,7 @@
 
 .order-form__legend {
   @include header;
-  margin-bottom: 13px;
+  margin-bottom: 23px;
 
   @include font-set(17px, 16px, 700);
   color: $main-color;

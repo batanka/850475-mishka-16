@@ -21,7 +21,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   display: flex;
   align-items: flex-start;
 }
@@ -34,10 +34,11 @@
 }
 
 .contacts__email {
-  width: 182px;
+  max-width: 182px;
 
-  text-decoration: underline $main-color;
+  // text-decoration: underline $main-color;
   color: $text-color;
+  border-bottom: $border-min-width solid $main-color;
 
   &:hover,
   &:focus {
@@ -113,6 +114,7 @@
 
   .contacts__email {
     width: auto;
+    max-width: 240px;
   }
 
   .contacts__adress {
