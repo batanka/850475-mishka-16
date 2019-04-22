@@ -13,31 +13,35 @@
   border: none;
 
   &--radio {
-    padding: 10px 0 9px;
+    padding: 15px 0 14px;
   }
 
   &--checkbox {
-    padding: 12px 0 0;
+    padding: 16px 0 5px;
+  }
+
+  &--name {
+    padding: 5px 0 5px;
   }
 
   &--tel {
-    margin-top: -1px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 12px;
   }
 
   &--mail {
-    padding-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 11px;
   }
 
   &--plus {
+    padding-top: 12px;
     padding-bottom: 9px;
   }
 }
 
 .order-form__wrapper {
   @include wrapper;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .order-form__legend {
@@ -71,6 +75,7 @@
 
 .order-form__input-wrapper {
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .order-form__bottom {
@@ -82,7 +87,7 @@
   display: block;
 
   @include font-set(14px, 16px);
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .order-form__button {
@@ -94,11 +99,11 @@
   .order-form__wrapper {
     @include wrapper-tablet;
     width: $tablet-width;
-    padding-bottom: 8px;
     display: flex;
   }
 
   .order__text {
+    padding: 0 50px;
     margin-bottom: 20px;
 
     @include font-set(17px, 30px);
@@ -108,28 +113,28 @@
     @include font-set(19px, 18px);
 
     &--radio {
-      padding: 36px 0 19px;
+      padding: 36px 0 25px;
     }
 
     &--checkbox {
-      padding: 50px 0 18px;
+      padding: 50px 0 26px;
     }
 
     &--name {
-      padding: 50px 0 17px;
+      padding: 47px 0 25px;
     }
 
     &--tel {
-      padding-top: 54px;
+      padding-top: 48px;
+      padding-bottom: 2px;
     }
 
     &--mail {
-      margin-top: -4px;
-      padding-bottom: 50px;
+      padding-bottom: 39px;
     }
 
     &--plus {
-      padding: 21px 0 17px;
+      padding: 51px 0 23px;
       margin-bottom: 20px;
     }
 
@@ -149,6 +154,10 @@
   .order-form__legend {
     width: 25%;
     padding: 19px 5px 21px 0;
+
+    &--plus {
+      padding-top: 17px;
+    }
   }
 
   .order-form__list {
@@ -158,7 +167,7 @@
   .order-form__bottom {
     @include wrapper-tablet;
     width: $tablet-width;
-    margin-bottom: 50px;
+    margin-bottom: 31px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -168,6 +177,7 @@
     width: 300px;
     order: 1;
 
+    @include font-set(17px, 30px);
     text-align: right;
   }
 
@@ -188,8 +198,12 @@
 
   .order-form__legend {
     width: 175px;
+    padding-top: 18px;
+    padding-left: 62px;
+  }
 
-    text-align: center;
+  .order-form__fieldset--plus {
+    margin-bottom: 17px;
   }
 
   .order-form__bottom {

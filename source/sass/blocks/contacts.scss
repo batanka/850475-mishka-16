@@ -4,7 +4,6 @@
 
 .contacts__wrapper {
   @include wrapper;
-  // width: 100%;
   padding-top: 41px;
   padding-bottom: 7px;
 }
@@ -36,7 +35,6 @@
 .contacts__email {
   max-width: 182px;
 
-  // text-decoration: underline $main-color;
   color: $text-color;
   border-bottom: $border-min-width solid $main-color;
 
@@ -184,7 +182,7 @@
   }
 
   .contacts__email {
-    width: 222px;
+    max-width: 222px;
   }
 
   .contacts__adress {
