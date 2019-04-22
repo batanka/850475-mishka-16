@@ -33,8 +33,7 @@
 
 .weekly-good__table {
   width: 100%;
-  display: block;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 
   border-collapse: collapse;
 
@@ -42,20 +41,23 @@
 }
 
 .weekly-good__key {
-  width: 100px;
   padding: 10px 0 9px;
   border-bottom: $border;
 }
 
 .weekly-good__table-value {
-  padding: 10px 0 9px;
-  width: 160px;
+  padding: 10px 0 9px 18px;
 
   border-bottom: $border;
 }
 
 .weekly-good__image {
   margin-bottom: 20px;
+}
+
+.weekly-good__image img {
+  display: block;
+  margin: 0 auto;
 }
 
 .weekly-good__price {
@@ -105,7 +107,7 @@
   .weekly-good__info {
     width: 50%;
     padding-right: 44px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   .weekly-good__desc {
@@ -115,7 +117,7 @@
   }
 
   .weekly-good__table-value {
-    width: 193px;
+    padding-left: 0;
   }
 
   .weekly-good__image {
@@ -158,7 +160,7 @@
   .weekly-good__info {
     padding-right: 58px;
     padding-left: 175px;
-    margin-bottom: 83px;
+    margin-bottom: 55px;
   }
 
   .weekly-good__desc {
