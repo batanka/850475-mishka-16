@@ -1,12 +1,12 @@
 .about__wrapper {
   @include wrapper;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 33px;
+  padding-bottom: 10px;
 }
 
 .about__title {
   @include header;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .about__list {
@@ -15,22 +15,46 @@
 
 .about__item {
   padding-top: 58px;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
 
   @include font-set(17px, 20px, 700);
+
+  &--eco {
+    background: url("../img/icon-feature-flower.svg") 7px 2px no-repeat;
+  }
+
+  &--style {
+    background: url("../img/icon-feature-money.svg") 0 4px no-repeat;
+  }
+
+  &--likes {
+    background: url("../img/icon-feature-heart.svg") 7px 9px no-repeat;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-ball.svg") 6px 6px no-repeat;
+  }
+
+  &--support {
+    background: url("../img/icon-feature-rocket.svg") 0 7px no-repeat;
+  }
+
+  &--gift {
+    background: url("../img/icon-feature-gift.svg") 4px 5px no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
     @include wrapper-tablet;
-    padding-top: 58px;
-    margin-bottom: 22px;
+    padding-top: 64px;
+    margin-bottom: 32px;
     width: $tablet-width;
   }
 
   .about__title {
     @include header(43px, 50px, 700);
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 
   .about__list {
@@ -42,7 +66,7 @@
   .about__item {
     width: 50%;
     padding-right: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 
     @include font-set(20px, 22px);
 
@@ -73,12 +97,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about__wrapper {
-    padding: 60px 225px 0;
+  .about {
+    @include wrapper-tablet;
     width: $desktop-width;
   }
 
+  .about__wrapper {
+    padding: 83px 175px 5px;
+    width: 100%;
+  }
+
   .about__title {
-    @include header(53px, 57px);
+    @include font-set(53px, 57px);
   }
 }

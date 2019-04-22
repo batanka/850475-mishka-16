@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 0;
+  padding: 14px 0;
 
   @include font-set(17px, 20px, 700);
   text-transform: uppercase;
@@ -10,4 +10,17 @@
   background-color: $white;
   border: $button-border;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $text-color;
+    color: $white;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $text-color;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
 }

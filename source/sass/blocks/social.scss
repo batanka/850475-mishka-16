@@ -1,7 +1,5 @@
 .social {
-  width: 143px;
-  min-height: 80px;
-  padding: 25px 0 20px;
+  width: 147px;
   margin: 0 auto;
 
   border-bottom: $border;
@@ -9,11 +7,13 @@
 
 .social__list {
   @include list-reset;
+  padding: 25px 0 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.social__item:not(:nth-child(3)) {
+.social__item:not(:nth-child(3n)) {
   margin-right: 40px;
 }
 
@@ -21,8 +21,18 @@
   margin-bottom: 5px;
 }
 
+.social__link img {
+  max-width: 24px;
+  max-height: 29px;
+}
+
+
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;
+  }
+
+  .social__list {
+    padding-top: 33px;
   }
 }

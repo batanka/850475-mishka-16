@@ -44,4 +44,15 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &--focusable:focus,
+  &--focusable:active {
+    position: static;
+    margin: 0;
+    width: auto;
+    height: auto;
+    clip: auto;
+    overflow: visible;
+    white-space: normal;
+  }
 }

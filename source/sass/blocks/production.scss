@@ -4,25 +4,51 @@
 }
 
 .production__wrapper {
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 33px;
   margin-bottom: 58px;
   border: $border;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus-within {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title-wrapper {
   margin-bottom: 25px;
-  padding: 0 42px 0 90px;
 }
 
 .production__title {
   @include header;
+  position: relative;
+  padding: 0 42px 0 90px;
+
   @include font-set(17px, 24px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 32px;
+    width: 32px;
+    height: 22px;
+
+    background: url("../img/icon-video.svg") center center no-repeat;
+  }
 }
 
 .production__top {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   text-align: center;
 }
@@ -33,10 +59,21 @@
   height: 78px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: -41px;
+  margin-left: -51px;
 
   border: none;
   background: url("../img/icon-play.svg") center center no-repeat;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__bottom {
@@ -45,7 +82,7 @@
 
 .production__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @include font-set(13px, 24px);
 }
@@ -63,31 +100,40 @@
 
   .production__wrapper {
     padding-top: 0;
-    padding-bottom: 46px;
+    padding-bottom: 45px;
+    margin-bottom: 63px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .production__top {
     width: 100%;
+    margin-bottom: 32px;
     order: -1;
   }
 
   .production__title-wrapper {
     width: 100%;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .production__title {
+    padding-left: 105px;
+
     @include font-set(20px, 24px);
+
+    &::before {
+      top: 0;
+      left: 40px;
+    }
   }
 
   .production__bottom {
-    padding: 0 42px;
+    padding: 0 40px;
   }
 
   .production__text {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 
     @include font-set(15px, 30px);
   }
@@ -102,6 +148,7 @@
     position: relative;
     min-height: 455px;
     padding-bottom: 0;
+    margin-bottom: 103px;
     flex-direction: column;
     align-items: flex-end;
   }
@@ -115,11 +162,17 @@
 
   .production__title-wrapper {
     width: 350px;
-    padding: 41px 58px 0 62px;
+    padding-top: 45px;
+    margin-bottom: 34px;
   }
 
   .production__title {
-    padding-top: 53px;
+    padding: 48px 58px 0 62px;
+
+    &::before {
+      top: 0;
+      left: 62px;
+    }
   }
 
   .production__bottom {

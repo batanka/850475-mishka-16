@@ -1,5 +1,22 @@
+.checkbox-list {
+  padding-top: 3px;
+}
+
 .checkbox-list__item {
   margin-bottom: 23px;
+
+  &:hover .checkbox-list__label::before {
+    border-color: $main-color;
+  }
+
+  &:active .checkbox-list__label::before {
+    border-color: $text-color;
+    opacity: 0.3;
+  }
+
+  &:active .checkbox-list__label::after {
+    display: block;
+  }
 }
 
 .checkbox-list__label {
@@ -35,8 +52,18 @@
   }
 }
 
-.checkbox-list__input:checked + .checkbox-list__label::after {
-  display: block;
+.checkbox-list__input {
+  &:checked + .checkbox-list__label::after {
+    display: block;
+  }
+
+  &:focus + .checkbox-list__label::before {
+    border: $border-width solid $main-color;
+  }
+
+  &:disabled + .checkbox-list__label::before {
+    border-color: rgba($text-color, 0.5);
+  }
 }
 
 @media (min-width: $tablet-width) {

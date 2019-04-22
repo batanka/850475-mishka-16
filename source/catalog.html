@@ -8,44 +8,47 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--close">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--logo">
-              <a class="site-list__link site-list__link--logo" href="index.html">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                  <img class="site-list__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка">
-                </picture>
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--catalog">
-              <a class="site-list__link site-list__link--catalog">Каталог товаров</a>
-            </li>
-            <li class="site-list__item site-list__item--form">
-              <a class="site-list__link site-list__link--form" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--cart">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-            <li class="site-list__item site-list__item--new">
-              <a class="site-list__link site-list__link--new" href="#">Новые поступления</a>
-            </li>
-            <li class="site-list__item site-list__item--sale">
-              <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-nav main-nav--open">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <p class="main-nav__logo-wrapper">
+          <a class="main-nav__logo"  href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка">
+            </picture>
+          </a>
+        </p>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__link site-list__link--catalog">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item--form">
+            <a class="site-list__link site-list__link--form" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--new">
+            <a class="site-list__link site-list__link--new" href="#">Новые поступления</a>
+          </li>
+          <li class="site-list__item site-list__item--sale">
+            <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link user-list__link--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--cart">
+            <a class="user-list__link user-list__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
-      <div class="page-main__intro">
+      <div class="page-main__intro page-main__intro--catalog zigzag">
+        <p class="page-main__text">Бесплатная доставка по России</p>
         <h1 class="page-main__title">Каталог товаров</h1>
       </div>
 
@@ -114,7 +117,7 @@
             <div class="catalog-item__description">
               <div class="catalog-item__top">
                 <a class="catalog-item__title-link" href="#">
-                  <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+                  <h2 class="catalog-item__title">Большая корзинка для&nbsp;игрушек</h2>
                 </a>
                 <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
               </div>
@@ -155,7 +158,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" href="index.html">
             <img src="img/logo-footer.svg" alt="Временно">
           </a>
         <div class="page-footer__socials social">
@@ -187,3 +190,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+    <div class="modal-order">
+      <h2 class="modal-order__title">Добавить в корзину</h2>
+      <p class="modal-order__text">Выберите размер:</p>
+      <form class="modal-order__form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="modal-order__input-wrapper">
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-S" value="S" checked>
+          <label class="modal-order__label" for="size-S">S</label>
+
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-M" value="M">
+          <label class="modal-order__label" for="size-M">M</label>
+
+          <input class="modal-order__input visually-hidden" type="radio" name="size" id="size-L" value="L">
+          <label class="modal-order__label" for="size-L">L</label>
+        </div>
+        <button class="button modal-order__button" type="submit">Добавить</button>
+      </form>
+      <button class="modal-order__close-button button visually-hidden visually-hidden--focusable" type="button" aria-label="Закрыть окно"></button>
+    </div>
+
+  </body>
+</html>

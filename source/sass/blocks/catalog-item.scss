@@ -3,14 +3,29 @@
   width: 100%;
 
   border: $border;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+  }
+
+  &:focus-within {
+    box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+  }
 }
 
 .catalog-item__link {
   display: block;
+  flex-shrink: 0;
 }
 
-.catalog-item__image {
+.catalog-item__link img {
   display: block;
+  width: 260px;
 }
 
 .catalog-item__description {
@@ -25,17 +40,29 @@
 
 .catalog-item__title {
   @include header(17px, 24px, 700);
-  margin-bottom: 15px;
-  padding-top: 30px;
+  margin-bottom: 5px;
+  padding-top: 26px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-item__text {
+  margin: 0;
+  margin-bottom: 19px;
+
   @include font-set(13px, 30px);
   color: $text-color;
 }
 
 .catalog-item__bottom {
-  padding: 24px 0;
+  padding: 21px 0 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,14 +74,35 @@
   @include font-set(15px, 24px, 700);
 }
 
-.catalog-item__add-cart path {
-  fill: #d3d2d2;
+.catalog-item__add-cart {
+  width: 20px;
+  height: 19px;
+
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: $main-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .catalog-item {
     display: flex;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .catalog-item__link {
@@ -113,5 +161,9 @@
 
   .catalog-item__description {
     flex-grow: 1;
+  }
+
+  .catalog-item__text {
+    margin-bottom: 14px;
   }
 }
