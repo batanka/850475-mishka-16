@@ -80,6 +80,11 @@
   .reviews {
     width: $tablet-width;
     background: url("../img/review@1x.jpg") left top no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__wrapper {
@@ -148,6 +153,11 @@
     padding: 70px 0 94px 175px;
 
     background: url("../img/review@1x.jpg") left top no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__title {
