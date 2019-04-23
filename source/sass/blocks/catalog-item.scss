@@ -1,6 +1,8 @@
 .catalog-item {
+  margin: 0 auto;
   margin-bottom: 30px;
   width: 100%;
+  max-width: 315px;
 
   border: $border;
 
@@ -25,6 +27,7 @@
 
 .catalog-item__link img {
   display: block;
+  margin: 0 auto;
   width: 260px;
 }
 
@@ -103,6 +106,7 @@
   .catalog-item {
     display: flex;
     margin-bottom: 52px;
+    max-width: none;
   }
 
   .catalog-item__link {

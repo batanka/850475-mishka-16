@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--open">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <p class="main-nav__logo-wrapper">
+        <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка">
+              <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Мишка">
             </picture>
           </a>
-        </p>
+        </div>
 
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--catalog">
@@ -91,9 +92,12 @@
 
           <div class="weekly-good__image">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x">
-              <img src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка Тиффани/серый">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаная корзинка Тиффани/серый">
             </picture>
           </div>
 
@@ -155,7 +159,9 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.588563716926!2d30.322607516607437!3d59.93896907550907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1555999427363!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 
         <a class="button contacts__button" href="contacts.html">Напишите нам</a>
       </section>
