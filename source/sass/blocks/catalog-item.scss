@@ -6,17 +6,25 @@
 
   border: $border;
 
+  transition: 0.3s;
+
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+
+    transition: 0.3s;
   }
 
   &:focus-within {
     box-shadow: 0 6px 10px 0 rgba($black, 0.1);
+
+    transition: 0.3s;
   }
 
   &:active {
     box-shadow: 0 3px 5px 0 rgba($black, 0.1);
+
+    transition: 0.3s;
   }
 }
 
@@ -77,27 +85,22 @@
   @include font-set(15px, 24px, 700);
 }
 
-.catalog-item__add-cart {
+.catalog-item__buy svg {
   width: 20px;
   height: 19px;
 
   opacity: 0.2;
+}
 
-  &:hover,
-  &:focus {
+.catalog-item__buy {
+  &:hover svg,
+  &:focus svg {
     opacity: 1;
-  }
-
-  &:hover path,
-  &:focus path {
     fill: $main-color;
   }
 
-  &:active {
+  &:active svg {
     opacity: 0.3;
-  }
-
-  &:active path {
     fill: $main-color;
   }
 }

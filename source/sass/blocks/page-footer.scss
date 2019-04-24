@@ -29,11 +29,22 @@
     display: block;
     padding: 5px 0;
     width: 185px;
-  }
 
-  .page-footer__logo img {
-    width: 102px;
-    height: 34px;
+    & svg {
+      width: 102px;
+      height: 34px;
+    }
+
+    &[href]:hover svg,
+    &[href]:focus svg {
+      opacity: 1;
+      fill: $main-color--diff;
+    }
+
+    &[href]:active svg {
+      opacity: 0.3;
+      fill: $main-color--diff;
+    }
   }
 }
 

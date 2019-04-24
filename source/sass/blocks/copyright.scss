@@ -12,13 +12,28 @@
 }
 
 .copyright__link {
-  width: 27px;
-  height: 34px;
-  padding-top: 2px;
-}
+  color: $black;
 
-.copyright__logo path {
-  fill: $main-color;
+  & svg {
+    width: 27px;
+    height: 34px;
+    padding-top: 2px;
+    fill: $main-color;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main-color--diff;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    fill: $main-color--diff;
+  }
+
+  &:active .copyright__text {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

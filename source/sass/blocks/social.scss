@@ -21,15 +21,30 @@
   margin-bottom: 5px;
 }
 
-.social__link img {
-  max-width: 24px;
-  max-height: 29px;
+.social__link {
+  svg {
+    max-width: 24px;
+    max-height: 29px;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 1;
+    fill: $main-color--diff;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    fill: $main-color--diff;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
   .social {
     margin: 0;
+
+    border-bottom: none;
   }
 
   .social__list {

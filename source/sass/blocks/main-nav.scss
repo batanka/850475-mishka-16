@@ -62,11 +62,34 @@
   border-bottom: $border;
 }
 
+.user-list__item svg {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 30px;
+  margin-top: -9px;
+  max-width: 21px;
+  max-height: 21px;
+
+  opacity: 0.2;
+}
+
 .user-list__link {
   display: block;
   padding: 26px 0 28px 75px;
 
   color: #000000;
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 1;
+    fill: $main-color;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    fill: $main-color;
+  }
 }
 
 .main-nav__logo {
@@ -80,21 +103,6 @@
   & img {
     width: 86px;
     height: 35px;
-  }
-}
-
-.user-list__item svg {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 30px;
-  margin-top: -9px;
-  max-width: 21px;
-  max-height: 21px;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
   }
 }
 
