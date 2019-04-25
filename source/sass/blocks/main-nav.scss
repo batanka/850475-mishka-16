@@ -294,4 +294,10 @@
     align-items: flex-start;
     order: 3;
   }
+
+  .user-list__link {
+    &--cart {
+      padding: 31px 2px 31px 83px;
+    }
+  }
 }

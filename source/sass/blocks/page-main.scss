@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main__intro {
-    margin-top: -62px;
+    margin-top: -63px;
     margin-bottom: 77px;
 
     border-top: $border;
@@ -86,6 +86,8 @@
 @media (min-width: $desktop-width) {
   .page-main__intro {
     &--index {
+      min-height: 628px;
+
       background: $bg-color--index url("../img/hero-desktop@1x.jpg") 50% 0 no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -101,6 +103,10 @@
     &--form {
       margin-bottom: 121px;
     }
+  }
+
+  .page-main__text {
+    padding-top: 18px;
   }
 
   .page-main__title {

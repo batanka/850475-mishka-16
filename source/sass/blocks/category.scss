@@ -64,7 +64,6 @@
 
   .category-list {
     @include wrapper-tablet;
-    // width: $tablet-width;
     width: 100%;
     margin-bottom: 20px;
     display: flex;
@@ -73,6 +72,15 @@
   .category-list__item {
     min-height: 119px;
     width: 50%;
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 0.7;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
 
     &--kids-toy::after {
       right: 35px;
@@ -85,14 +93,25 @@
       transition: 0.2s;
     }
 
+    &--interior:hover,
+    &--interior:focus,
+    &--interior:active {
+      background-color: $main-color--active;
+    }
+
+    &--kids-toy:hover,
+    &--kids-toy:focus,
+    &--kids-toy:active {
+      background-color: $main-color--diff;
+    }
+
     &:active .category-list__text {
       opacity: 0.3;
     }
   }
 
   .category-list__link {
-    padding-top: 27px;
-    padding-left: 35px;
+    padding: 27px 29px 33px 35px;
 
     @include font-set(20px, 30px, 700);
   }

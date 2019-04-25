@@ -81,7 +81,7 @@
   .weekly-good__wrapper {
     @include wrapper-tablet;
     position: relative;
-    padding-top: 23px;
+    padding-top: 24px;
     padding-bottom: 54px;
     width: $tablet-width;
   }
@@ -114,7 +114,7 @@
   }
 
   .weekly-good__desc {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     @include font-set(17px, 30px);
   }
@@ -147,9 +147,13 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good__wrapper {
-    padding-top: 102px;
+    padding-top: 103px;
     padding-bottom: 74px;
     width: $desktop-width;
+  }
+
+  .weekly-good__header {
+    margin-bottom: 45px;
   }
 
   .weekly-good__title {

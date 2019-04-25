@@ -1,6 +1,6 @@
 .about__wrapper {
   @include wrapper;
-  padding-top: 33px;
+  padding-top: 35px;
   padding-bottom: 10px;
 }
 
@@ -103,11 +103,13 @@
   }
 
   .about__wrapper {
-    padding: 83px 175px 5px;
+    padding: 80px 175px 5px;
     width: 100%;
   }
 
   .about__title {
+    margin-bottom: 45px;
+
     @include font-set(53px, 57px);
   }
 }
