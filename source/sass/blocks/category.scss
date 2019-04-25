@@ -74,7 +74,7 @@
     width: 50%;
 
     &:hover::after,
-    &:focus::after {
+    &:focus-within::after {
       opacity: 0.7;
     }
 
@@ -87,20 +87,20 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus-within {
       min-height: 124px;
       margin-top: -5px;
       transition: 0.2s;
     }
 
     &--interior:hover,
-    &--interior:focus,
+    &--interior:focus-within,
     &--interior:active {
       background-color: $main-color--active;
     }
 
     &--kids-toy:hover,
-    &--kids-toy:focus,
+    &--kids-toy:focus-within,
     &--kids-toy:active {
       background-color: $main-color--diff;
     }

@@ -181,7 +181,7 @@
               <p class="order-form__input-wrapper field-group field-group--tel">
                 <label class="field-group__label visually-hidden" for="mobile">Номер телефона</label>
                 <input class="field-group__input field-group__input--tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="mobile" pattern="[0-9]">
-                <svg class="field-group__icon field-group__icon--phone" width="25" height="24">
+                <svg class="field-group__icon field-group__icon--phone" width="25" height="24" aria-hidden="true" role="presentation">
                   <use xlink:href="#sprite-icon-phone"></use>
                   <!-- <use xlink:href="sprite.svg#sprite-icon-phone"></use> -->
                 </svg>
@@ -195,7 +195,7 @@
               <p class="order-form__input-wrapper field-group">
                 <label class="field-group__label visually-hidden" for="email">Номер телефона</label>
                 <input class="field-group__input" type="email" placeholder="Ваш Email*" id="email" required>
-                <svg class="field-group__icon field-group__icon--mail" width="32" height="32">
+                <svg class="field-group__icon field-group__icon--mail" width="32" height="32" aria-hidden="true" role="presentation">
                   <use xlink:href="#sprite-icon-mail"></use>
                   <!-- <use xlink:href="sprite.svg#sprite-icon-mail"></use> -->
                 </svg>
@@ -223,8 +223,8 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-          <a class="page-footer__logo" href="index.html">
-            <svg class="user-list__cart-icon" width="102" height="34">
+          <a class="page-footer__logo" href="index.html"  aria-label="Логотип Мишка, переход на главную">
+            <svg class="user-list__cart-icon" width="102" height="34" role="img">
               <use xlink:href="#sprite-logo-footer"></use>
               <!-- <use xlink:href="sprite.svg#sprite-logo-footer"></use> -->
             </svg>
@@ -233,7 +233,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram">
-                <svg class="user-list__cart-icon" width="22" height="21">
+                <svg class="user-list__cart-icon" width="22" height="21" role="img">
                   <use xlink:href="#sprite-icon-insta"></use>
                   <!-- <use xlink:href="sprite.svg#sprite-icon-insta"></use> -->
                 </svg>
@@ -241,7 +241,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook">
-                <svg class="user-list__cart-icon" width="15" height="28">
+                <svg class="user-list__cart-icon" width="15" height="28" role="img">
                   <use xlink:href="#sprite-icon-fb"></use>
                   <!-- <use xlink:href="sprite.svg#sprite-icon-fb"></use> -->
                 </svg>
@@ -249,7 +249,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter">
-                <svg class="user-list__cart-icon" width="23" height="20">
+                <svg class="user-list__cart-icon" width="23" height="20" role="img">
                   <use xlink:href="#sprite-icon-twitter"></use>
                   <!-- <use xlink:href="sprite.svg#sprite-icon-twitter"></use> -->
                 </svg>
@@ -260,7 +260,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html-academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="user-list__cart-icon" width="27" height="34">
+            <svg class="user-list__cart-icon" width="27" height="34" role="img">
               <use xlink:href="#sprite-htmlacademy"></use>
               <!-- <use xlink:href="sprite.svg#sprite-htmlacademy"></use> -->
             </svg>

@@ -45,6 +45,10 @@
       opacity: 0.3;
       fill: $main-color--diff;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
