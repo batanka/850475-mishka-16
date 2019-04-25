@@ -1,5 +1,4 @@
 .about__wrapper {
-  @include wrapper;
   padding-top: 35px;
   padding-bottom: 10px;
 }
@@ -46,7 +45,6 @@
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
-    @include wrapper-tablet;
     padding-top: 64px;
     margin-bottom: 32px;
     width: $tablet-width;
@@ -97,13 +95,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about {
-    @include wrapper-tablet;
-    width: $desktop-width;
-  }
-
   .about__wrapper {
-    padding: 80px 175px 5px;
+    padding: 80px 225px 5px;
     width: 100%;
   }
 

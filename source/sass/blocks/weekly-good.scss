@@ -1,5 +1,4 @@
 .weekly-good__wrapper {
-  @include wrapper;
   padding-top: 26px;
   padding-bottom: 36px;
 }
@@ -79,7 +78,6 @@
 
 @media (min-width: $tablet-width) {
   .weekly-good__wrapper {
-    @include wrapper-tablet;
     position: relative;
     padding-top: 24px;
     padding-bottom: 54px;

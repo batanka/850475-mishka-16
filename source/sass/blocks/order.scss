@@ -40,10 +40,6 @@
   }
 }
 
-.order-form__wrapper {
-  @include wrapper;
-}
-
 .order-form__legend {
   @include header;
   margin-bottom: 23px;
@@ -97,7 +93,6 @@
 
 @media (min-width: $tablet-width) {
   .order-form__wrapper {
-    @include wrapper-tablet;
     width: $tablet-width;
     display: flex;
   }

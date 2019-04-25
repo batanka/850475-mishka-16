@@ -1,6 +1,7 @@
 .production {
   @include wrapper;
   width: 100%;
+  max-width: 375px;
 }
 
 .production__wrapper {
@@ -107,6 +108,7 @@
   .production {
     @include wrapper-tablet;
     width: $tablet-width;
+    max-width: none;
   }
 
   .production__wrapper {
