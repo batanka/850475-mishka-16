@@ -2,9 +2,6 @@
   width: 182px;
   padding: 16px 0;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .copyright__text {
@@ -12,18 +9,37 @@
 }
 
 .copyright__link {
-  width: 27px;
-  height: 34px;
-  padding-top: 2px;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.copyright__logo path {
-  fill: $main-color;
+  color: $black;
+
+  & svg {
+    width: 27px;
+    height: 34px;
+    margin-top: 3px;
+
+    fill: $main-color;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $main-color--diff;
+  }
+
+  &:active svg {
+    fill: $main-color--diff;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
-    padding: 10px 0;
+    padding: 34px 0;
   }
 }

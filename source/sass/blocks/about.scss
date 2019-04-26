@@ -1,6 +1,5 @@
 .about__wrapper {
-  @include wrapper;
-  padding-top: 33px;
+  padding-top: 35px;
   padding-bottom: 10px;
 }
 
@@ -46,9 +45,8 @@
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
-    @include wrapper-tablet;
     padding-top: 64px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     width: $tablet-width;
   }
 
@@ -97,17 +95,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about {
-    @include wrapper-tablet;
-    width: $desktop-width;
-  }
-
   .about__wrapper {
-    padding: 83px 175px 5px;
+    padding: 80px 225px 5px;
+    margin-bottom: 32px;
     width: 100%;
   }
 
   .about__title {
+    margin-bottom: 45px;
+
     @include font-set(53px, 57px);
   }
 }
