@@ -73,6 +73,7 @@
 
   border: none;
   background: url("../img/icon-play.svg") center center no-repeat;
+  cursor: pointer;
 
   transition: 0.4s;
 
@@ -171,6 +172,7 @@
     top: 0;
     left: 0;
     width: 682px;
+    margin-bottom: 0;
   }
 
   .production__title-wrapper {

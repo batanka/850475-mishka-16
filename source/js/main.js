@@ -1,6 +1,10 @@
+// Модальное окно
+
 var openModalBtn = document.querySelectorAll(".modal-add-cart");
 var modal = document.querySelector(".modal-order");
 var overlay = document.querySelector(".overlay");
+var inputRadio = modal.querySelector("[name=size]");
+var closeBtn = modal.querySelector(".modal-order__close-button");
 
 
 for (var i = 0; i < openModalBtn.length; i++) {
@@ -8,6 +12,7 @@ for (var i = 0; i < openModalBtn.length; i++) {
     evt.preventDefault();
     modal.classList.add("modal-order--show");
     overlay.classList.add("overlay--show");
+    inputRadio.focus();
   });
 }
 
@@ -28,3 +33,17 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+closeBtn.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 13) {
+    evt.preventDefault();
+    if(modal.classList.contains("modal-order--show")) {
+      modal.classList.remove("modal-order--show");
+      overlay.classList.remove("overlay--show");
+    }
+  }
+});
+
+
+// Меню шапки
+

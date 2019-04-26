@@ -46,7 +46,7 @@
 @media (min-width: $tablet-width) {
   .about__wrapper {
     padding-top: 64px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     width: $tablet-width;
   }
 
@@ -97,6 +97,7 @@
 @media (min-width: $desktop-width) {
   .about__wrapper {
     padding: 80px 225px 5px;
+    margin-bottom: 32px;
     width: 100%;
   }
 
