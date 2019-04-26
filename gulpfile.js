@@ -47,4 +47,3 @@ gulp.task("sprite", function () {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"));
   });
-

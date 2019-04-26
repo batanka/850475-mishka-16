@@ -43,7 +43,3 @@ closeBtn.addEventListener("keydown", function (evt) {
     }
   }
 });
-
-
-// Меню шапки
-
