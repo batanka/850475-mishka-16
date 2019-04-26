@@ -9,27 +9,84 @@
   & a:active[href] {
     opacity: 0.3;
   }
+
+  &--no-js .main-nav__toggle {
+    display: none;
+  }
+
+  &--closed .site-list,
+  &--closed .user-list {
+    display: none;
+  }
+
+  &--opened .site-list {
+    display: block;
+    position: absolute;
+  }
+
+  &--opened .user-list {
+    display: block;
+    position: absolute;
+    top: 238px; /*Плохо*/
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 30px;
-  right: 30px;
+    width: 20px;
+    height: 2px;
+    top: 30px;
+    right: 30px;
 
-  border: none;
-  background: transparent url("../img/icon-menu-close.svg") center center no-repeat;
+    border: none;
+    background-color: $black;
+  // background: transparent url("../img/icon-menu-close.svg") center center no-repeat;
 
-  &--close {
-    background: transparent url("../img/icon-menu-open.svg") center center no-repeat;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: -6px;
+    right: 0;
+
+    background-color: $black;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: 6px;
+    right: 0;
+
+    background-color: $black;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-color: rgba($black, 0);
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+  bottom: 0px;
 }
 
 .site-list {
   @include list-reset;
+  width: 100%;
 
   font-weight: 700;
+
+  background-color: $white;
+  z-index: 5;
 }
 
 .site-list__item {
@@ -52,8 +109,12 @@
 
 .user-list {
   @include list-reset;
+  width: 100%;
 
   font-weight: 700;
+
+  background-color: $white;
+  z-index: 5;
 }
 
 .user-list__item {
@@ -92,13 +153,16 @@
   }
 }
 
-.main-nav__logo {
-  display: block;
-  padding: 21px 0 16px;
-
-  text-align: center;
+.main-nav__logo-wrapper {
   border-top: $border;
   border-bottom: $border;
+}
+
+.main-nav__logo {
+  display: block;
+  width: 86px;
+  margin: 0 auto;
+  padding: 21px 0 16px;
 
   & img {
     width: 86px;
