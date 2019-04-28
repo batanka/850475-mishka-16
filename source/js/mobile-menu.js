@@ -3,6 +3,8 @@ var mainNav = document.querySelector(".main-nav");
 var toggleNav = mainNav.querySelector(".main-nav__toggle");
 
 mainNav.classList.remove("main-nav--no-js");
+mainNav.classList.remove("main-nav--opened");
+mainNav.classList.add("main-nav--closed");
 
 toggleNav.addEventListener ("click", function (evt) {
   evt.preventDefault();

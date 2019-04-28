@@ -9,10 +9,6 @@
   & a:active[href] {
     opacity: 0.3;
   }
-
-  &--no-js .main-nav__toggle {
-    display: none;
-  }
 }
 
 .main-nav__toggle {
@@ -72,6 +68,10 @@
 
 @media (max-width: 767px) {
   .main-nav {
+    &--no-js .main-nav__toggle {
+      display: none;
+    }
+
     &--closed .main-nav__list {
       display: none;
     }

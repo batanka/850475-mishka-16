@@ -40,13 +40,35 @@
   }
 }
 
+.order-form__wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 81.2%;
+    height: 1px;
+    top: 7px;
+    right: 30px;
+
+    background-color: $main-color;
+
+    z-index: -1;
+  }
+}
+
 .order-form__legend {
   @include header;
+  display: inline-block;
+  vertical-align: top;
   margin-bottom: 23px;
+  padding-right: 25px;
 
   @include font-set(17px, 16px, 700);
   color: $main-color;
   text-transform: uppercase;
+
+  background-color: $bg-color--body;
 
   &--name {
     margin-bottom: 29px;
@@ -95,6 +117,10 @@
   .order-form__wrapper {
     width: $tablet-width;
     display: flex;
+
+    &::before {
+      display: none;
+    }
   }
 
   .order__text {
@@ -150,6 +176,8 @@
     width: 25%;
     padding: 19px 5px 21px 0;
 
+    background-color: transparent;
+
     &--plus {
       padding-top: 17px;
     }
@@ -157,6 +185,10 @@
 
   .order-form__list {
     width: 75%;
+
+    &::before {
+      display: none;
+    }
   }
 
   .order-form__bottom {
