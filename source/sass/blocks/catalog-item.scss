@@ -41,7 +41,7 @@
 
 .catalog-item__description {
   width: 100%;
-  padding: 0 28px;
+  padding: 0 27px;
 }
 
 .catalog-item__title-link {
@@ -141,6 +141,8 @@
   }
 
   .catalog-item__price {
+    padding-left: 3px;
+
     @include font-set(17px, 24px);
   }
 }
@@ -168,9 +170,14 @@
 
   .catalog-item__description {
     flex-grow: 1;
+    padding: 0 25px;
   }
 
   .catalog-item__text {
     margin-bottom: 14px;
   }
+
+  .catalog-item__price {
+    padding-left: 0;
+}
 }

@@ -1,13 +1,12 @@
 .social {
-  width: 147px;
-  margin: 0 auto;
-
   border-bottom: $border;
 }
 
 .social__list {
   @include list-reset;
-  padding: 25px 0 20px;
+  margin: 0 auto;
+  width: 147px;
+  padding: 27px 0 17px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,11 +21,6 @@
 }
 
 .social__link {
-  svg {
-    max-width: 24px;
-    max-height: 29px;
-  }
-
   &:hover svg,
   &:focus svg {
     opacity: 1;
@@ -43,6 +37,10 @@
   }
 }
 
+.social__icon {
+  max-width: 24px;
+  max-height: 29px;
+}
 
 @media (min-width: $tablet-width) {
   .social {
@@ -52,6 +50,6 @@
   }
 
   .social__list {
-    padding-top: 33px;
+    padding: 32px 0 20px;
   }
 }
