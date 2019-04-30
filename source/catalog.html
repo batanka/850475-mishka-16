@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>Каталог интернет-магазина Мишка</title>
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--open">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <!--main-nav--closed-->
+      <!--main-nav--opened-->
+      <nav class="main-nav main-nav--opened main-nav--no-js">
+        <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo"  href="index.html">
             <picture>
@@ -180,7 +183,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
           <a class="page-footer__logo" href="index.html" aria-label="Логотип Мишка, переход на главную">
-            <svg class="user-list__cart-icon" width="102" height="34" role="img">
+            <svg class="page-footer__logo-icon" width="102" height="34" role="img">
               <use xlink:href="img/sprite.svg#sprite-logo-footer"></use>
             </svg>
           </a>
@@ -188,21 +191,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram">
-                <svg class="user-list__cart-icon" width="22" height="21" role="img">
+                <svg class="social__icon" width="22" height="21" role="img">
                   <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook">
-                <svg class="user-list__cart-icon" width="15" height="28" role="img">
+                <svg class="social__icon" width="15" height="28" role="img">
                   <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter">
-                <svg class="user-list__cart-icon" width="23" height="20" role="img">
+                <svg class="social__icon" width="23" height="20" role="img">
                   <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
                 </svg>
               </a>
@@ -212,7 +215,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html-academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="user-list__cart-icon" width="27" height="34" role="img">
+            <svg class="copyright__icon" width="27" height="34" role="img">
               <use xlink:href="img/sprite.svg#sprite-htmlacademy"></use>
             </svg>
           </a>
@@ -240,9 +243,10 @@
       <button class="modal-order__close-button button visually-hidden visually-hidden--focusable" type="button" aria-label="Закрыть окно"></button>
     </div>
 
-    <script src="/js/svg4everybody.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/mobile-menu.min.js"></script>
 
   </body>
 </html>

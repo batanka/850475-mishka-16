@@ -15,14 +15,6 @@
 
   color: $black;
 
-  & svg {
-    width: 27px;
-    height: 34px;
-    margin-top: 3px;
-
-    fill: $main-color;
-  }
-
   &:hover svg,
   &:focus svg {
     fill: $main-color--diff;
@@ -35,6 +27,14 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+  margin-top: 3px;
+
+  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {

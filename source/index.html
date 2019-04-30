@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <title>HTML Academy: Мишка</title>
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--open">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <!--main-nav--closed-->
+      <!--main-nav--opened-->
+      <nav class="main-nav main-nav--opened main-nav--no-js">
+        <button class="main-nav__toggle main-nav__toggle--close" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo">
             <picture>
@@ -168,7 +171,7 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.588563716926!2d30.322607516607437!3d59.93896907550907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1555999427363!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.588563716926!2d30.322607516607437!3d59.93896907550907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1555999427363!5m2!1sru!2sru" allowfullscreen></iframe>
         </div>
 
         <a class="button contacts__button" href="contacts.html">Напишите нам</a>
@@ -178,7 +181,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
-          <svg class="user-list__cart-icon" width="102" height="34" role="img">
+          <svg class="page-footer__logo-icon" width="102" height="34" role="img">
             <use xlink:href="img/sprite.svg#sprite-logo-footer"></use>
           </svg>
         </a>
@@ -186,21 +189,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--intagram" href="#" aria-label="Мишка в Instagram">
-                <svg class="user-list__cart-icon" width="22" height="21" role="img">
+                <svg class="social__icon" width="22" height="21" role="img">
                   <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--fb" href="#" aria-label="Мишка в Facebook">
-                <svg class="user-list__cart-icon" width="15" height="28" role="img">
+                <svg class="social__icon" width="15" height="28" role="img">
                   <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#" aria-label="Мишка в Twitter">
-                <svg class="user-list__cart-icon" width="23" height="20" role="img">
+                <svg class="social__icon" width="23" height="20" role="img">
                   <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
                 </svg>
               </a>
@@ -210,7 +213,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Html-academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="user-list__cart-icon" width="27" height="34" role="img">
+            <svg class="copyright__icon" width="27" height="34" role="img">
               <use xlink:href="img/sprite.svg#sprite-htmlacademy"></use>
             </svg>
           </a>
@@ -238,9 +241,10 @@
       <button class="modal-order__close-button button visually-hidden visually-hidden--focusable" type="button" aria-label="Закрыть окно"></button>
     </div>
 
-    <script src="/js/svg4everybody.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/mobile-menu.min.js"></script>
 
   </body>
 </html>

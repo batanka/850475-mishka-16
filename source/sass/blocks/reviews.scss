@@ -98,6 +98,7 @@
 
   .reviews__title {
     @include header(43px, 50px);
+    max-width: 100%;
     margin-bottom: 50px;
   }
 

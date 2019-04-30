@@ -14,7 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    padding-top: 21px;
+    padding-top: 20px;
     padding-bottom: 20px;
     max-width: 1150px;
     min-height: 143px;
@@ -27,11 +27,6 @@
     display: block;
     padding: 5px 0;
     width: 185px;
-
-    & svg {
-      width: 102px;
-      height: 34px;
-    }
 
     &[href]:hover svg,
     &[href]:focus svg {
@@ -47,6 +42,11 @@
     &:focus {
       outline: none;
     }
+  }
+
+  .page-footer__logo-icon {
+    width: 102px;
+    height: 34px;
   }
 }
 
