@@ -128,6 +128,10 @@
     align-items: flex-start;
   }
 
+  .catalog-item__top {
+    max-width: 100%;
+  }
+
   .catalog-item__title {
     @include font-set(20px, 24px);
   }
@@ -155,6 +159,7 @@
 
   .catalog-item {
     margin-bottom: 57px;
+    margin-left: 0;
     width: 315px;
     flex-direction: column;
   }

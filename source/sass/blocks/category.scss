@@ -69,10 +69,15 @@
   }
 
   .category-list__item {
+    display: flex;
     min-height: 119px;
     width: 50%;
 
     &:hover::after,
+    &:focus::after {
+      opacity: 0.7;
+    }
+
     &:focus-within::after {
       opacity: 0.7;
     }
@@ -86,6 +91,12 @@
     }
 
     &:hover,
+    &:focus {
+      min-height: 124px;
+      margin-top: -5px;
+      transition: 0.2s;
+    }
+
     &:focus-within {
       min-height: 124px;
       margin-top: -5px;
@@ -93,14 +104,22 @@
     }
 
     &--interior:hover,
-    &--interior:focus-within,
+    &--interior:focus,
     &--interior:active {
       background-color: $main-color--active;
     }
 
+    &--interior:focus-within {
+      background-color: $main-color--active;
+    }
+
     &--kids-toy:hover,
-    &--kids-toy:focus-within,
+    &--kids-toy:focus,
     &--kids-toy:active {
+      background-color: $main-color--diff;
+    }
+
+    &--kids-toy:focus-within {
       background-color: $main-color--diff;
     }
 
