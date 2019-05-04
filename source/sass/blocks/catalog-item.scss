@@ -73,7 +73,7 @@
 }
 
 .catalog-item__bottom {
-  padding: 21px 0 27px;
+  padding: 20px 0 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,6 +83,10 @@
 
 .catalog-item__price {
   @include font-set(15px, 24px, 700);
+}
+
+.catalog-item__buy {
+  padding-top: 2px;
 }
 
 .catalog-item__buy svg {
@@ -148,6 +152,10 @@
     padding-left: 3px;
 
     @include font-set(17px, 24px);
+  }
+
+  .catalog-item__buy {
+    padding-right: 4px;
   }
 }
 
