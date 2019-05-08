@@ -87,16 +87,6 @@
 
 .catalog-item__buy {
   padding-top: 2px;
-}
-
-.catalog-item__buy svg {
-  width: 20px;
-  height: 19px;
-
-  opacity: 0.2;
-}
-
-.catalog-item__buy {
   &:hover svg,
   &:focus svg {
     opacity: 1;
@@ -107,6 +97,13 @@
     opacity: 0.3;
     fill: $main-color;
   }
+}
+
+.catalog-item__buy svg {
+  width: 20px;
+  height: 19px;
+
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet-width) {
