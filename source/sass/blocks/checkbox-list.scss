@@ -74,13 +74,15 @@
   }
 
   .checkbox-list__item {
-    width: 239px;
-    padding-right: 38px;
+    width: 200px;
+    margin-right: 39px;
     margin-bottom: 25px;
   }
 
   .checkbox-list__label {
     padding: 16px 0 17px 80px;
+
+    cursor: pointer;
 
     &::before {
       top: 0;
@@ -101,6 +103,10 @@
 @media (min-width: $desktop-width) {
   .checkbox-list {
     padding-top: 0;
-    padding-right: 24px;
+    justify-content: flex-start;
+  }
+
+  .checkbox-list__item {
+    margin-right: 61px;
   }
 }
