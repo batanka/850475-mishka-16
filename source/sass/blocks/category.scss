@@ -5,7 +5,16 @@
 .category-list__item {
   position: relative;
   width: 100%;
+}
+
+.category-list__link {
+  display: block;
   min-height: 103px;
+  padding: 26px 50% 29px 29px;
+
+  @include font-set(19px, 24px, 700);
+
+  color: $white;
 
   &--interior {
     background-color: $main-color;
@@ -15,7 +24,7 @@
       content: "";
       width: 41px;
       height: 62px;
-      top: 50%;
+      top: 54px;
       right: 36px;
       transform: translate(0, -50%);
 
@@ -32,7 +41,7 @@
       content: "";
       width: 60px;
       height: 60px;
-      top: 50%;
+      top: 51px;
       right: 27px;
       transform: translate(0, -50%);
 
@@ -40,20 +49,6 @@
       opacity: 0.5;
     }
   }
-}
-
-.category-list__link {
-  display: block;
-  padding: 25px 29px 30px;
-
-  @include font-set(19px, 24px, 700);
-
-  color: #ffffff;
-}
-
-.category-list__text {
-  display: block;
-  width: 50%;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,16 +61,43 @@
     width: 100%;
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .category-list__item {
     display: flex;
     min-height: 119px;
     width: 50%;
+  }
+
+  .category-list__link {
+    max-width: 100%;
+    padding: 28px 50% 33px 35px;
+    flex-grow: 1;
+
+    @include font-set(20px, 30px, 700);
+
+    transition: 0.3s;
+
+    &--interior::after {
+      top: 60px;
+
+      transition: 0.3s;
+    }
+
+    &--kids-toy::after {
+      top: 60px;
+      right: 35px;
+
+      transition: 0.3s;
+    }
 
     &:hover::after,
     &:focus::after {
       opacity: 0.7;
+      top: 55px;
+
+      transition: 0.3s;
     }
 
     &:focus-within::after {
@@ -86,21 +108,17 @@
       opacity: 0.3;
     }
 
-    &--kids-toy::after {
-      right: 35px;
-    }
-
     &:hover,
     &:focus {
-      min-height: 124px;
+      padding-bottom: 38px;
       margin-top: -5px;
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     &:focus-within {
-      min-height: 124px;
+      padding-bottom: 38px;
       margin-top: -5px;
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     &--interior:hover,
@@ -123,20 +141,9 @@
       background-color: $main-color--diff;
     }
 
-    &:active .category-list__text {
-      opacity: 0.3;
+    &:active {
+      color: rgba($white, 0.3);
     }
-  }
-
-  .category-list__link {
-    padding: 27px 29px 33px 35px;
-
-    @include font-set(20px, 30px, 700);
-  }
-
-  .category-list__text {
-    display: block;
-    width: 120px;
   }
 }
 
@@ -146,7 +153,7 @@
     margin-bottom: 20px;
   }
 
-  .category-list__item {
-    background-position-x: 93%;
+  .category-list__link {
+    padding-right: 350px;
   }
 }
