@@ -42,7 +42,7 @@
 .reviews__controls {
   display: flex;
   margin-top: 29px;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .reviews__control {
@@ -73,6 +73,8 @@
 .reviews__button {
   display: block;
   width: 100%;
+
+  @include font-set(18px, 20px);
 }
 
 @media (min-width: $tablet-width) {
@@ -137,6 +139,8 @@
   .reviews__button {
     width: 175px;
     margin-bottom: 40px;
+
+    @include font-set(17px, 20px);
   }
 }
 

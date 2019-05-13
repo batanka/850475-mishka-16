@@ -1,13 +1,13 @@
 .main-nav {
   position: relative;
 
-  & a:hover[href],
-  & a:focus[href] {
-    opacity: 0.6;
+  & a[href]:hover,
+  & a[href]:focus {
+    color: rgba($black, 0.6);
   }
 
-  & a:active[href] {
-    opacity: 0.3;
+  & a[href]:active {
+    color: rgba($black, 0.3);
   }
 }
 
@@ -44,6 +44,17 @@
   &::after {
     top: 14px;
     right: 0;
+  }
+}
+
+.main-nav__logo[href] {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -125,7 +136,7 @@
   }
 
   .main-nav__logo-wrapper {
-    width: 48%;
+    width: 45%;
     order: 1;
 
     border: none;
@@ -133,8 +144,9 @@
 
   .main-nav__logo {
     width: 113px;
-    padding: 21px 0 12px;
+    padding: 22px 0 20px;
     margin: 0;
+    margin-left: -2px;
 
     text-align: left;
 
@@ -164,6 +176,7 @@
   .main-nav__logo {
     width: 149px;
     padding: 9px 0 7px;
+    margin: 0;
   }
 
   .main-nav__logo img {

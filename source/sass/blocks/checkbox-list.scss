@@ -46,7 +46,7 @@
     height: 16px;
 
     background: url("../img/icon-tick.svg") center center no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     display: none;
   }
@@ -107,6 +107,6 @@
   }
 
   .checkbox-list__item {
-    margin-right: 61px;
+    margin-right: 62px;
   }
 }

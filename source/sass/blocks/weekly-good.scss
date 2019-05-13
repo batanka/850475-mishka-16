@@ -32,7 +32,7 @@
 
 .weekly-good__table {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   border-collapse: collapse;
 
@@ -74,6 +74,8 @@
 .weekly-good__button {
   display: block;
   width: 100%;
+
+  @include font-set(17px, 20px);
 }
 
 @media (min-width: $tablet-width) {
@@ -108,7 +110,7 @@
   .weekly-good__info {
     width: 50%;
     padding-right: 44px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 
   .weekly-good__desc {
@@ -145,7 +147,7 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good__wrapper {
-    padding-top: 102px;
+    padding-top: 101px;
     padding-bottom: 74px;
     width: $desktop-width;
   }

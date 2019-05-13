@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main__intro {
-    margin-top: -63px;
+    margin-top: -47px;
     margin-bottom: 77px;
 
     border-top: $border;
@@ -58,16 +58,16 @@
 
   .page-main__title {
     width: 500px;
-    padding: 35px 0 80px;
+    padding: 49px 0 80px;
 
     @include font-set(43px, 50px, 700);
 
     &--index {
-      padding: 92px 0;
+      padding: 107px 0;
     }
 
     &--form {
-      padding: 32px 0 80px;
+      padding: 47px 0 80px;
     }
   }
 
@@ -76,7 +76,7 @@
     width: 100%;
     max-width: 1150px;
     margin: 0 auto;
-    padding: 15px 50px 20px 450px;
+    padding: 17px 50px 5px 450px;
 
     @include font-set(15px, 24px);
     text-align: right;
@@ -105,18 +105,14 @@
     }
   }
 
-  .page-main__text {
-    padding-top: 18px;
-  }
-
   .page-main__title {
-    padding: 32px 0 103px;
+    padding: 47px 0 103px;
     width: 700px;
 
     @include font-set(53px, 57px, 700);
 
     &--index {
-      padding: 92px 0;
+      padding: 107px 0;
     }
   }
 }

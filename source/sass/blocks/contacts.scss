@@ -80,6 +80,8 @@
   width: 81.25%;
   margin: 0 auto;
   margin-bottom: 38px;
+
+  @include font-set(18px, 20px);
 }
 
 @media (min-width: $tablet-width) {
@@ -159,6 +161,8 @@
   .contacts__button {
     width: 30%;
     margin-bottom: 56px;
+
+    @include font-set(17px, 20px);
   }
 }
 
@@ -173,7 +177,7 @@
   .contacts__wrapper {
     width: 100%;
     margin-top: 70px;
-    padding: 82px 50% 49px 175px;
+    padding: 81px 50% 49px 175px;
   }
 
   .contacts__title {

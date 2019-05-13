@@ -100,6 +100,7 @@
 .order-form__button {
   display: block;
   width: 100%;
+  padding: 16px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,7 +122,7 @@
     }
 
     &--name {
-      padding: 48px 0 24px;
+      padding: 47px 0 24px;
     }
 
     &--tel {
@@ -134,7 +135,7 @@
     }
 
     &--plus {
-      padding: 50px 0 23px;
+      padding: 50px 0 24px;
       margin-bottom: 20px;
     }
 
@@ -152,6 +153,7 @@
   }
 
   .order-form__legend {
+    align-items: flex-start;
     width: 25%;
     padding: 19px 5px 21px 0;
 
@@ -206,6 +208,10 @@
     width: 175px;
     padding-top: 18px;
     padding-left: 62px;
+
+    &--mail {
+      padding-top: 21px;
+    }
   }
 
   .order-form__fieldset {
@@ -214,7 +220,7 @@
     }
 
     &--plus {
-      margin-bottom: 17px;
+      margin-bottom: 14px;
     }
   }
 

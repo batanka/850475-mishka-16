@@ -28,8 +28,11 @@
 
 .field-list__input::placeholder {
   @include font-set(17px, 18px);
-  color: $text-color;
-  opacity: 0.3;
+  color: rgba($text-color, 0.3);
+}
+
+.field-list input:-ms-input-placeholder {
+  color: rgba($text-color, 0.3);
 }
 
 @media (min-width: $tablet-width) {

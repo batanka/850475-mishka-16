@@ -1,37 +1,32 @@
-.zigzag {
+.zigzag-line {
   position: relative;
   width: 100%;
 
-  &::after {
+  &::before {
     position: absolute;
     content: "";
     height: 6px;
     width: 100%;
     left: 0;
-    bottom: 0;
-    background-image: url("../img/bg-zigzag-fill.svg");
+    top: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: contain;
-
-    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .zigzag {
-    &::after {
-      display: block;
-      height: 24px;
-      bottom: -11px;
+  .zigzag-line {
+    &::before {
+      height: 17px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .zigzag {
-    &::after {
-      height: 34px;
-      bottom: -17px;
+  .zigzag-line {
+    &::before {
+      height: 23px;
     }
   }
 }
