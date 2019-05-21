@@ -15,6 +15,7 @@ var webp = require("gulp-webp");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var htmlmin = require("gulp-htmlmin");
+var ghpages = require("gh-pages");
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -112,3 +113,8 @@ gulp.task("refresh", function (done) {
 gulp.task("utility", gulp.parallel("html", "css", "js", "sprite"));
 gulp.task("build", gulp.series("clean", "copy", "utility"));
 gulp.task("start", gulp.series("build", "server"));
+
+
+gulp.task("publish", function(cb) {
+  ghpages.publish("build", cb)
+});
